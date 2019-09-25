@@ -116,7 +116,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export EDITOR=vim
+export EDITOR=nvim
 set -o vi
 
 source .profile
+[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
