@@ -1,1 +1,2 @@
-alias v="$EDITOR"
+alias v="$EDITOR" \
+	sdn="sudo shutdown -h now" 
