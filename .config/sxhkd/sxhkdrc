@@ -1,5 +1,5 @@
 # Basic binds
 super + Return
-	$TERMINAL zsh
+	$TERMINAL
 super + d
 	dmenu_run
