@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 # Profile file. Runs on login. 
 export TERMINAL="st"
+export SHELL="zsh"
 
 export PATH="$PATH":~/bin
 
