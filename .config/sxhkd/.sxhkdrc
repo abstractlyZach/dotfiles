@@ -1,0 +1,5 @@
+# Basic binds
+super + Return
+	$TERMINAL zsh
+super + d
+	dmenu_run
