@@ -7,6 +7,7 @@ endif
 
 call plug#begin('~/.config/nvim/plugged')
 Plug 'vim-airline/vim-airline'
+Plug 'kovetskiy/sxhkd-vim'
 call plug#end()
 
 set bg=light
