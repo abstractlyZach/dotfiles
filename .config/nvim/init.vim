@@ -11,7 +11,10 @@ Plug 'kovetskiy/sxhkd-vim'
 Plug 'scrooloose/nerdtree'
 call plug#end()
 
-set bg=light
+" Tells vim what background color you're using for the terminal window. If bg=dark, 
+" it'll adjust text colors so that they can be seen easily on a dark background.
+set bg=dark
+
 set mouse=a
 
 " Some basics:
