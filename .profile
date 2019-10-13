@@ -3,6 +3,7 @@
 export TERMINAL="st"
 export SHELL="zsh"
 export EDITOR="nvim"
+export FILE="ranger"
 
 export PATH="$PATH":~/bin
 

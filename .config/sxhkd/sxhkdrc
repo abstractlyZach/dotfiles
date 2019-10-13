@@ -3,3 +3,7 @@ super + Return
 	$TERMINAL
 super + d
 	dmenu_run
+
+# open file manager
+super + r
+	$TERMINAL -e $FILE
