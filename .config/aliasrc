@@ -1,5 +1,5 @@
 alias v="$EDITOR" \
 	sdn="sudo shutdown -h now" \
 	gs="git status -sb" \
-	ls="ls --almost-all --color --indicator-style=slash"
+	ls="ls --almost-all --color --indicator-style=slash --group-directories-first"
 
