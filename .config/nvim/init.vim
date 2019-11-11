@@ -45,7 +45,7 @@ set mouse=a
 map <leader>n :NERDTreeToggle<CR>
 
 " spellcheck
-map <F6> :setlocal spell! spelllang=en_US<CR>
+map <leader>o :setlocal spell! spelllang=en_us<CR>
 
 " Shortcutting split navigation, saving a keypress:
 	map <C-h> <C-w>h
