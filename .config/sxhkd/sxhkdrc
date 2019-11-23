@@ -10,3 +10,6 @@ super + i
 	$TERMINAL -e htop
 super + shift + w
 	$BROWSER
+
+super + grave
+	dmenu_emoji
