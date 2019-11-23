@@ -17,7 +17,7 @@ super + grave
 
 super + shift + x
 	prompt "Shutdown computer?" "sudo -A shutdown -h now"
-super + shift + backspace
+super + shift + BackSpace
 	prompt "Reboot computer?" "sudo -A reboot"
 
 super + w
