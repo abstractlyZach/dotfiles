@@ -14,3 +14,11 @@ super + shift + w
 # super + backtick (`)
 super + grave
 	dmenu_emoji
+
+super + shift + x
+	prompt "Shutdown computer?" "sudo -A shutdown -h now"
+super + shift + backspace
+	prompt "Reboot computer?" "sudo -A reboot"
+
+super + w
+	$TERMINAL -e sudo nmtui
