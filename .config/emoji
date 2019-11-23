@@ -11,7 +11,7 @@
 😉 winking face; U+1F609
 😊 smiling face with smiling eyes; U+1F60A
 😇 smiling face with halo; U+1F607
-🥰 smiling face with 3 hearts; U+1F970
+#🥰 smiling face with 3 hearts; U+1F970
 😍 smiling face with heart-eyes; U+1F60D
 🤩 star-struck; U+1F929
 😘 face blowing a kiss; U+1F618
@@ -50,13 +50,13 @@
 🤢 nauseated face; U+1F922
 🤮 face vomiting; U+1F92E
 🤧 sneezing face; U+1F927
-🥵 hot face; U+1F975
-🥶 cold face; U+1F976
-🥴 woozy face; U+1F974
+#🥵 hot face; U+1F975
+#🥶 cold face; U+1F976
+#🥴 woozy face; U+1F974
 😵 dizzy face; U+1F635
 🤯 exploding head; U+1F92F
 🤠 cowboy hat face; U+1F920
-🥳 partying face; U+1F973
+#🥳 partying face; U+1F973
 😎 smiling face with sunglasses; U+1F60E
 🤓 nerd face; U+1F913
 🧐 face with monocle; U+1F9D0
@@ -68,7 +68,7 @@
 😯 hushed face; U+1F62F
 😲 astonished face; U+1F632
 😳 flushed face; U+1F633
-🥺 pleading face; U+1F97A
+#🥺 pleading face; U+1F97A
 😦 frowning face with open mouth; U+1F626
 😧 anguished face; U+1F627
 😨 fearful face; U+1F628
@@ -177,13 +177,13 @@
 💅 nail polish; U+1F485
 🤳 selfie; U+1F933
 💪 flexed biceps; U+1F4AA
-🦵 leg; U+1F9B5
-🦶 foot; U+1F9B6
+#🦵 leg; U+1F9B5
+#🦶 foot; U+1F9B6
 👂 ear; U+1F442
 👃 nose; U+1F443
 🧠 brain; U+1F9E0
-🦷 tooth; U+1F9B7
-🦴 bone; U+1F9B4
+#🦷 tooth; U+1F9B7
+#🦴 bone; U+1F9B4
 👀 eyes; U+1F440
 👁 eye; U+1F441
 👅 tongue; U+1F445
@@ -295,12 +295,12 @@
 👼 baby angel; U+1F47C
 🎅 Santa Claus; U+1F385
 🤶 Mrs. Claus; U+1F936
-🦸 superhero; U+1F9B8
-🦸‍♂️ man superhero; U+1F9B8 U+200D U+2642 U+FE0F
-🦸‍♀️ woman superhero; U+1F9B8 U+200D U+2640 U+FE0F
-🦹 supervillain; U+1F9B9
-🦹‍♂️ man supervillain; U+1F9B9 U+200D U+2642 U+FE0F
-🦹‍♀️ woman supervillain; U+1F9B9 U+200D U+2640 U+FE0F
+#🦸 superhero; U+1F9B8
+#🦸‍♂️ man superhero; U+1F9B8 U+200D U+2642 U+FE0F
+#🦸‍♀️ woman superhero; U+1F9B8 U+200D U+2640 U+FE0F
+#🦹 supervillain; U+1F9B9
+#🦹‍♂️ man supervillain; U+1F9B9 U+200D U+2642 U+FE0F
+#🦹‍♀️ woman supervillain; U+1F9B9 U+200D U+2640 U+FE0F
 🧙 mage; U+1F9D9
 🧙‍♂️ man mage; U+1F9D9 U+200D U+2642 U+FE0F
 🧙‍♀️ woman mage; U+1F9D9 U+200D U+2640 U+FE0F
@@ -435,10 +435,10 @@
 👤 bust in silhouette; U+1F464
 👥 busts in silhouette; U+1F465
 👣 footprints; U+1F463
-🦰 red hair; U+1F9B0
-🦱 curly hair; U+1F9B1
-🦳 white hair; U+1F9B3
-🦲 bald; U+1F9B2
+#🦰 red hair; U+1F9B0
+#🦱 curly hair; U+1F9B1
+#🦳 white hair; U+1F9B3
+#🦲 bald; U+1F9B2
 🐵 monkey face; U+1F435
 🐒 monkey; U+1F412
 🦍 gorilla; U+1F98D
@@ -447,7 +447,7 @@
 🐩 poodle; U+1F429
 🐺 wolf face; U+1F43A
 🦊 fox face; U+1F98A
-🦝 raccoon; U+1F99D
+#🦝 raccoon; U+1F99D
 🐱 cat face; U+1F431
 🐈 cat; U+1F408
 🦁 lion face; U+1F981
@@ -472,11 +472,11 @@
 🐐 goat; U+1F410
 🐪 camel; U+1F42A
 🐫 two-hump camel; U+1F42B
-🦙 llama; U+1F999
+#🦙 llama; U+1F999
 🦒 giraffe; U+1F992
 🐘 elephant; U+1F418
 🦏 rhinoceros; U+1F98F
-🦛 hippopotamus; U+1F99B
+#🦛 hippopotamus; U+1F99B
 🐭 mouse face; U+1F42D
 🐁 mouse; U+1F401
 🐀 rat; U+1F400
@@ -489,8 +489,8 @@
 🐻 bear face; U+1F43B
 🐨 koala; U+1F428
 🐼 panda face; U+1F43C
-🦘 kangaroo; U+1F998
-🦡 badger; U+1F9A1
+#🦘 kangaroo; U+1F998
+#🦡 badger; U+1F9A1
 🐾 paw prints; U+1F43E
 🦃 turkey; U+1F983
 🐔 chicken; U+1F414
@@ -503,10 +503,10 @@
 🕊 dove; U+1F54A
 🦅 eagle; U+1F985
 🦆 duck; U+1F986
-🦢 swan; U+1F9A2
+#🦢 swan; U+1F9A2
 🦉 owl; U+1F989
-🦚 peacock; U+1F99A
-🦜 parrot; U+1F99C
+#🦚 peacock; U+1F99A
+#🦜 parrot; U+1F99C
 🐸 frog face; U+1F438
 🐊 crocodile; U+1F40A
 🐢 turtle; U+1F422
@@ -535,8 +535,8 @@
 🕷 spider; U+1F577
 🕸 spider web; U+1F578
 🦂 scorpion; U+1F982
-🦟 mosquito; U+1F99F
-🦠 microbe; U+1F9A0
+#🦟 mosquito; U+1F99F
+#🦠 microbe; U+1F9A0
 💐 bouquet; U+1F490
 🌸 cherry blossom; U+1F338
 💮 white flower; U+1F4AE
@@ -566,7 +566,7 @@
 🍋 lemon; U+1F34B
 🍌 banana; U+1F34C
 🍍 pineapple; U+1F34D
-🥭 mango; U+1F96D
+#🥭 mango; U+1F96D
 🍎 red apple; U+1F34E
 🍏 green apple; U+1F34F
 🍐 pear; U+1F350
@@ -583,7 +583,7 @@
 🌽 ear of corn; U+1F33D
 🌶 hot pepper; U+1F336
 🥒 cucumber; U+1F952
-🥬 leafy green; U+1F96C
+#🥬 leafy green; U+1F96C
 🥦 broccoli; U+1F966
 🍄 mushroom; U+1F344
 🥜 peanuts; U+1F95C
@@ -592,7 +592,7 @@
 🥐 croissant; U+1F950
 🥖 baguette bread; U+1F956
 🥨 pretzel; U+1F968
-🥯 bagel; U+1F96F
+#🥯 bagel; U+1F96F
 🥞 pancakes; U+1F95E
 🧀 cheese wedge; U+1F9C0
 🍖 meat on bone; U+1F356
@@ -614,7 +614,7 @@
 🥣 bowl with spoon; U+1F963
 🥗 green salad; U+1F957
 🍿 popcorn; U+1F37F
-🧂 salt; U+1F9C2
+#🧂 salt; U+1F9C2
 🥫 canned food; U+1F96B
 🍱 bento box; U+1F371
 🍘 rice cracker; U+1F358
@@ -628,13 +628,13 @@
 🍣 sushi; U+1F363
 🍤 fried shrimp; U+1F364
 🍥 fish cake with swirl; U+1F365
-🥮 moon cake; U+1F96E
+#🥮 moon cake; U+1F96E
 🍡 dango; U+1F361
 🥟 dumpling; U+1F95F
 🥠 fortune cookie; U+1F960
 🥡 takeout box; U+1F961
 🦀 crab; U+1F980
-🦞 lobster; U+1F99E
+#🦞 lobster; U+1F99E
 🦐 shrimp; U+1F990
 🦑 squid; U+1F991
 🍦 soft ice cream; U+1F366
@@ -644,7 +644,7 @@
 🍪 cookie; U+1F36A
 🎂 birthday cake; U+1F382
 🍰 shortcake; U+1F370
-🧁 cupcake; U+1F9C1
+#🧁 cupcake; U+1F9C1
 🥧 pie; U+1F967
 🍫 chocolate bar; U+1F36B
 🍬 candy; U+1F36C
@@ -677,7 +677,7 @@
 🌐 globe with meridians; U+1F310
 🗺 world map; U+1F5FA
 🗾 map of Japan; U+1F5FE
-🧭 compass; U+1F9ED
+#🧭 compass; U+1F9ED
 🏔 snow-capped mountain; U+1F3D4
 ⛰ mountain; U+26F0
 🌋 volcano; U+1F30B
@@ -690,7 +690,7 @@
 🏟 stadium; U+1F3DF
 🏛 classical building; U+1F3DB
 🏗 building construction; U+1F3D7
-🧱 brick; U+1F9F1
+#🧱 brick; U+1F9F1
 🏘 houses; U+1F3D8
 🏚 derelict house; U+1F3DA
 🏠 house; U+1F3E0
@@ -766,7 +766,7 @@
 🛵 motor scooter; U+1F6F5
 🚲 bicycle; U+1F6B2
 🛴 kick scooter; U+1F6F4
-🛹 skateboard; U+1F6F9
+#🛹 skateboard; U+1F6F9
 🚏 bus stop; U+1F68F
 🛣 motorway; U+1F6E3
 🛤 railway track; U+1F6E4
@@ -798,7 +798,7 @@
 🚀 rocket; U+1F680
 🛸 flying saucer; U+1F6F8
 🛎 bellhop bell; U+1F6CE
-🧳 luggage; U+1F9F3
+#🧳 luggage; U+1F9F3
 ⌛ hourglass done; U+231B
 ⏳ hourglass not done; U+23F3
 ⌚ watch; U+231A
@@ -879,7 +879,7 @@
 🎄 Christmas tree; U+1F384
 🎆 fireworks; U+1F386
 🎇 sparkler; U+1F387
-🧨 firecracker; U+1F9E8
+#🧨 firecracker; U+1F9E8
 ✨ sparkles; U+2728
 🎈 balloon; U+1F388
 🎉 party popper; U+1F389
@@ -890,7 +890,7 @@
 🎏 carp streamer; U+1F38F
 🎐 wind chime; U+1F390
 🎑 moon viewing ceremony; U+1F391
-🧧 red envelope; U+1F9E7
+#🧧 red envelope; U+1F9E7
 🎀 ribbon; U+1F380
 🎁 wrapped gift; U+1F381
 🎗 reminder ribbon; U+1F397
@@ -904,18 +904,18 @@
 3rd place medal; U+1F949 🥉
 ⚽ soccer ball; U+26BD
 ⚾ baseball; U+26BE
-🥎 softball; U+1F94E
+#🥎 softball; U+1F94E
 🏀 basketball; U+1F3C0
 🏐 volleyball; U+1F3D0
 🏈 american football; U+1F3C8
 🏉 rugby football; U+1F3C9
 🎾 tennis; U+1F3BE
-🥏 flying disc; U+1F94F
+#🥏 flying disc; U+1F94F
 🎳 bowling; U+1F3B3
 🏏 cricket game; U+1F3CF
 🏑 field hockey; U+1F3D1
 🏒 ice hockey; U+1F3D2
-🥍 lacrosse; U+1F94D
+#🥍 lacrosse; U+1F94D
 🏓 ping pong; U+1F3D3
 🏸 badminton; U+1F3F8
 🥊 boxing glove; U+1F94A
@@ -931,13 +931,13 @@
 🎯 direct hit; U+1F3AF
 🎱 pool 8 ball; U+1F3B1
 🔮 crystal ball; U+1F52E
-🧿 nazar amulet; U+1F9FF
+#🧿 nazar amulet; U+1F9FF
 🎮 video game; U+1F3AE
 🕹 joystick; U+1F579
 🎰 slot machine; U+1F3B0
 🎲 game die; U+1F3B2
-🧩 jigsaw; U+1F9E9
-🧸 teddy bear; U+1F9F8
+#🧩 jigsaw; U+1F9E9
+#🧸 teddy bear; U+1F9F8
 ♠ spade suit; U+2660
 ♥ heart suit; U+2665
 ♦ diamond suit; U+2666
@@ -949,12 +949,12 @@
 🎭 performing arts; U+1F3AD
 🖼 framed picture; U+1F5BC
 🎨 artist palette; U+1F3A8
-🧵 thread; U+1F9F5
-🧶 yarn; U+1F9F6
+#🧵 thread; U+1F9F5
+#🧶 yarn; U+1F9F6
 👓 glasses; U+1F453
 🕶 sunglasses; U+1F576
-🥽 goggles; U+1F97D
-🥼 lab coat; U+1F97C
+#🥽 goggles; U+1F97D
+#🥼 lab coat; U+1F97C
 👔 necktie; U+1F454
 👕 t-shirt; U+1F455
 👖 jeans; U+1F456
@@ -973,8 +973,8 @@
 🎒 backpack; U+1F392
 👞 man’s shoe; U+1F45E
 👟 running shoe; U+1F45F
-🥾 hiking boot; U+1F97E
-🥿 flat shoe; U+1F97F
+#🥾 hiking boot; U+1F97E
+#🥿 flat shoe; U+1F97F
 👠 high-heeled shoe; U+1F460
 👡 woman’s sandal; U+1F461
 👢 woman’s boot; U+1F462
@@ -1030,7 +1030,7 @@
 💾 floppy disk; U+1F4BE
 💿 optical disk; U+1F4BF
 📀 dvd; U+1F4C0
-🧮 abacus; U+1F9EE
+#🧮 abacus; U+1F9EE
 🎥 movie camera; U+1F3A5
 🎞 film frames; U+1F39E
 📽 film projector; U+1F4FD
@@ -1070,7 +1070,7 @@
 💷 pound banknote; U+1F4B7
 💸 money with wings; U+1F4B8
 💳 credit card; U+1F4B3
-🧾 receipt; U+1F9FE
+#🧾 receipt; U+1F9FE
 💹 chart increasing with yen; U+1F4B9
 💱 currency exchange; U+1F4B1
 💲 heavy dollar sign; U+1F4B2
@@ -1139,12 +1139,12 @@
 ⚖ balance scale; U+2696
 🔗 link; U+1F517
 ⛓ chains; U+26D3
-🧰 toolbox; U+1F9F0
-🧲 magnet; U+1F9F2
+#🧰 toolbox; U+1F9F0
+#🧲 magnet; U+1F9F2
 ⚗ alembic; U+2697
-🧪 test tube; U+1F9EA
-🧫 petri dish; U+1F9EB
-🧬 dna; U+1F9EC
+#🧪 test tube; U+1F9EA
+#🧫 petri dish; U+1F9EB
+#🧬 dna; U+1F9EC
 🔬 microscope; U+1F52C
 🔭 telescope; U+1F52D
 📡 satellite antenna; U+1F4E1
@@ -1156,14 +1156,14 @@
 🚽 toilet; U+1F6BD
 🚿 shower; U+1F6BF
 🛁 bathtub; U+1F6C1
-🧴 lotion bottle; U+1F9F4
-🧷 safety pin; U+1F9F7
-🧹 broom; U+1F9F9
-🧺 basket; U+1F9FA
-🧻 roll of paper; U+1F9FB
-🧼 soap; U+1F9FC
-🧽 sponge; U+1F9FD
-🧯 fire extinguisher; U+1F9EF
+#🧴 lotion bottle; U+1F9F4
+#🧷 safety pin; U+1F9F7
+#🧹 broom; U+1F9F9
+#🧺 basket; U+1F9FA
+#🧻 roll of paper; U+1F9FB
+#🧼 soap; U+1F9FC
+#🧽 sponge; U+1F9FD
+#🧯 fire extinguisher; U+1F9EF
 🛒 shopping cart; U+1F6D2
 🚬 cigarette; U+1F6AC
 ⚰ coffin; U+26B0
@@ -1286,7 +1286,7 @@
 ➗ heavy division sign; U+2797
 ➰ curly loop; U+27B0
 ➿ double curly loop; U+27BF
-〽 part alternation mark; U+303D
+#〽 part alternation mark; U+303D
 ✳ eight-spoked asterisk; U+2733
 ✴ eight-pointed star; U+2734
 ❇ sparkle; U+2747
@@ -1296,7 +1296,7 @@
 ❔ white question mark; U+2754
 ❕ white exclamation mark; U+2755
 ❗ exclamation mark; U+2757
-〰 wavy dash; U+3030
+#〰 wavy dash; U+3030
 © copyright; U+00A9
 ® registered; U+00AE
 ™ trade mark; U+2122
