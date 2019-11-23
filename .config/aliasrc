@@ -1,10 +1,13 @@
 #!/usr/bin/env sh
 
-alias v="$EDITOR" \
+alias \
+	v="$EDITOR" \
 	sdn="sudo shutdown -h now" \
 	gs="git status -sb" \
 	la="LC_ALL='C' ls --almost-all --color --indicator-style=slash --group-directories-first" \
-	ls="ls --color --indicator-style=slash --group-directories-first" \ 
-	# search everything!
-	se="du -a --exclude=".git" ~/workspace/dotfiles/ ~/bin/ ~/workspace/zarbs/ | awk '{print $2}' | fzf | xargs -r $EDITOR"
+	ls="ls --color --indicator-style=slash --group-directories-first"  
+
+
+# search everything!
+se() { du -a --exclude=".git" ~/workspace/dotfiles/ ~/bin/ ~/workspace/zarbs/ | awk '{print $2}' | fzf | xargs -r $EDITOR ;}
 
