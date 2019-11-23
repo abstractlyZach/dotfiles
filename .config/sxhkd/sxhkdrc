@@ -11,5 +11,6 @@ super + i
 super + shift + w
 	$BROWSER
 
+# super + backtick (`)
 super + grave
 	dmenu_emoji
