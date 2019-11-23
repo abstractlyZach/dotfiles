@@ -70,3 +70,8 @@ bindkey '^e' edit-command-line
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
+# enable fzf for fuzzy-finding
+if [[ ! "$PATH" == */home/zach/.fzf/bin* ]]; then
+  export PATH="${PATH:+${PATH}:}/home/zach/.fzf/bin"
+fi
