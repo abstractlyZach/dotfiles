@@ -52,3 +52,7 @@ map <leader>o :setlocal spell! spelllang=en_us<CR>
 	map <C-j> <C-w>j
 	map <C-k> <C-w>k
 	map <C-l> <C-w>l
+
+" Copy selected text to system clipboard:
+	vnoremap <C-c> "+y
+	map <C-p> "+P
