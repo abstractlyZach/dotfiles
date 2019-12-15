@@ -20,5 +20,6 @@ super + shift + x
 super + shift + BackSpace
 	prompt "Reboot computer?" "sudo -A reboot"
 
+# wifi connection utility
 super + w
 	$TERMINAL -e sudo nmtui
