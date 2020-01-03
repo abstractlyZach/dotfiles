@@ -5,7 +5,8 @@ alias \
 	sdn="sudo shutdown -h now" \
 	gs="git status -sb" \
 	la="LC_ALL='C' ls --almost-all --color --indicator-style=slash --group-directories-first" \
-	ls="ls --color --indicator-style=slash --group-directories-first"  
+	ls="ls --color --indicator-style=slash --group-directories-first" \
+	ll="ls --almost-all --human-readable -l --color --indicator-style=slash --group-directories-first"  
 
 
 # search everything!
