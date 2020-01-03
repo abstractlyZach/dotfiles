@@ -1,5 +1,5 @@
 # needs to be manually run since .bash_profile will get picked up before ~/.profile
-source ~/dotfiles/common/.profile
+source ~/.profile
 
 # use GNU utilities instead of BSD utilities
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
@@ -11,5 +11,5 @@ source ~/.bashrc
 # add java stuff to path
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
-source ~/dotfiles/zsh/.zshrc
+source ~/.config/zsh/.zshrc
 
