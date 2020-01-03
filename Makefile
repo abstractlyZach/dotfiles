@@ -6,6 +6,7 @@ all:
 osx:
 	make basics
 	stow --verbose=2 plangrid
+	stow --verbose=2 skhd
 	stow --verbose=2 osx
 
 basics:
