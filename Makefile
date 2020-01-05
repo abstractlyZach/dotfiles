@@ -14,4 +14,5 @@ basics:
 
 ubuntu:
 	make basics
-	sleep 1
+	stow --verbose=2 zsh
+	stow --verbose=2 Xserver
