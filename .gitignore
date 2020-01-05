@@ -4,3 +4,15 @@ nvim/autoload
 configstore
 # this is where I store my current wallpaper
 wall.png
+
+# stuff ubuntu keeps putting into the .config folder
+dconf/
+evolution/
+gnome-initial-setup-done
+gtk-3.0/
+ibus/
+nautilus/
+pulse/
+user-dirs.dirs
+user-dirs.locale
+
