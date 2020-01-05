@@ -11,7 +11,7 @@ osx:
 
 basics:
 	stow --verbose=2 common
-	rm nvim/autoload/plug.vim
+	rm nvim/autoload/plug.vim || true
 
 ubuntu:
 	make basics
