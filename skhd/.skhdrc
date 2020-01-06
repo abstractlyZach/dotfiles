@@ -5,6 +5,10 @@ alt - return : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance -d
 alt - k : yabai -m window --focus west || yabai -m window --focus east
 alt - j : yabai -m window --focus east || yabai -m window --focus west
 
+# focus monitor
+alt - 0x2B : yabai -m display --focus 1 # comma
+alt - 0x2F : yabai -m display --focus 2 # period
+
 # destroy desktop
 cmd + alt - w : yabai -m space --destroy
 
@@ -24,6 +28,8 @@ shift + alt - 3 : yabai -m window --space 3
 shift + alt - 4 : yabai -m window --space 4
 shift + alt - 5 : yabai -m window --space 5
 shift + alt - 6 : yabai -m window --space 6
+shift + alt - 7 : yabai -m window --space 7
+shift + alt - 8 : yabai -m window --space 8
 
 # no-op. prevents me from "hiding" windows through OSX's hotkeys
 cmd - h : :
