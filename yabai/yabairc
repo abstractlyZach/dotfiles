@@ -7,9 +7,9 @@ yabai -m config status_bar_icon_font         "FontAwesome:Regular:12.0"
 yabai -m config status_bar_background_color  0xe0202020
 yabai -m config status_bar_foreground_color  0xffa8a8a8
 yabai -m config status_bar_space_icon_strip  1 2 3 4 5 6 7 8 9
-yabai -m config status_bar_power_icon_strip   
-yabai -m config status_bar_space_icon        
-yabai -m config status_bar_clock_icon        
+yabai -m config status_bar_power_icon_strip  🔋 ⚡
+# yabai -m config status_bar_space_icon        spaces!
+yabai -m config status_bar_clock_icon        🕒
 
 # global settings
 yabai -m config mouse_follows_focus          on
@@ -40,7 +40,7 @@ yabai -m config right_padding                20
 yabai -m config window_gap                   10
 
 # specific space settings
-yabai -m config --space 7 layout             float
+# yabai -m config --space 7 layout             float
 
 # window rules
 yabai -m rule --add app=Mail space=2
