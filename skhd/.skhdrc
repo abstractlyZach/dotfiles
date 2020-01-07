@@ -5,9 +5,10 @@ alt - return : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance -d
 alt - k : yabai -m window --focus west || yabai -m window --focus east
 alt - j : yabai -m window --focus east || yabai -m window --focus west
 
+
 # focus monitor
-alt - 0x2B : yabai -m display --focus 1 # comma
-alt - 0x2F : yabai -m display --focus 2 # period
+alt - 0x2B : yabai -m display --focus next || yabai -m display --focus prev # comma
+alt - 0x2F : yabai -m display --focus next || yabai -m display --focus prev # period
 
 # destroy desktop
 cmd + alt - w : yabai -m space --destroy
