@@ -59,3 +59,9 @@ map <leader>o :setlocal spell! spelllang=en_us<CR>
 " Copy selected text to system clipboard:
 	vnoremap <C-c> "+y
 	map <C-p> "+P
+
+" Arrow keys are for the weak! Turn them off.
+	noremap <Up> <nop>
+	noremap <Down> <nop>
+	noremap <Left> <nop>
+	noremap <Right> <nop>
