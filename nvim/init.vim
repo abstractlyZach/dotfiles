@@ -21,12 +21,15 @@ call plug#begin('~/.config/nvim/plugged')
 	" Allows for basic directory navigation in vim
 	Plug 'scrooloose/nerdtree'
 
+	"aesthetic color schemes
+	Plug 'arcticicestudio/nord-vim'
+
 call plug#end()
 
 
-" Tells vim what background color you're using for the terminal window. If bg=dark, 
-" it'll adjust text colors so that they can be seen easily on a dark background.
-set bg=dark
+
+" Use the nord color scheme
+colorscheme nord
 
 " Enable the mouse in all vim modes
 set mouse=a
