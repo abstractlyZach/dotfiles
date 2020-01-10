@@ -40,6 +40,8 @@ set mouse=a
 	syntax on
 	set encoding=utf-8
 	set number relativenumber
+	" highlight the current line
+	set cursorline
 
 " Disables automatic commenting on newline:
 	autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
