@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+# Watch yabairc and restart if it has changed
+
+ls ~/.config/yabai/yabairc | 
+	entr -s 'terminal-notifier -message "yabairc updated!" && brew services restart yabai'
