@@ -7,7 +7,7 @@ alt - j : yabai -m window --focus next
 
 # focus monitor
 alt - 0x2B : yabai -m display --focus next || yabai -m display --focus prev # comma
-alt - 0x2F : yabai -m display --focus next || yabai -m display --focus prev # period
+alt - 0x2F : yabai -m display --focus prev || yabai -m display --focus next # period
 
 # destroy desktop
 cmd + alt - w : yabai -m space --destroy
@@ -32,8 +32,8 @@ shift + alt - 7 : yabai -m window --space 7
 shift + alt - 8 : yabai -m window --space 8
 
 # send window to display
-shift + alt - 0x2B : yabai -m window --display 1 || yabai -m window --display 2  # comma
-shift + alt - 0x2F : yabai -m window --display 1 || yabai -m window --display 2  # period
+shift + alt - 0x2B : yabai -m window --display next || yabai -m window --display prev  # comma
+shift + alt - 0x2F : yabai -m window --display prev || yabai -m window --display next  # period
 
 # no-op. prevents me from "hiding" windows through OSX's hotkeys
 cmd - h : :
