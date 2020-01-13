@@ -3,12 +3,13 @@
 alias \
 	v="$EDITOR" \
 	sdn="sudo shutdown -h now" \
-	gs="git status -sb" \
-	# list everything with this priority: directories, capital letters, lowercase letters, alphabetical
-	la="LC_ALL='C' ls --almost-all --color --indicator-style=slash --group-directories-first" \
-	ls="ls --color --indicator-style=slash --group-directories-first" \
-	# long, detailed listing
-	ll="ls --almost-all --human-readable -l --color --indicator-style=slash --group-directories-first"  
+	gs="git status -sb" 
+
+# list everything with this priority: directories, capital letters, lowercase letters, alphabetical
+alias la="LC_ALL='C' ls --almost-all --color --indicator-style=slash --group-directories-first" 
+alias ls="ls --color --indicator-style=slash --group-directories-first"
+# long, detailed listing
+alias ll="ls --almost-all --human-readable -l --color --indicator-style=slash --group-directories-first"  
 
 
 # search everything!
