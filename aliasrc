@@ -7,9 +7,9 @@ alias \
 
 # list everything with this priority: directories, capital letters, lowercase letters, alphabetical
 alias la="LC_ALL='C' ls --almost-all --color --indicator-style=slash --group-directories-first" 
-alias ls="ls --color --indicator-style=slash --group-directories-first"
+alias ls="LC_ALL='C' ls --color --indicator-style=slash --group-directories-first"
 # long, detailed listing
-alias ll="ls --almost-all --human-readable -l --color --indicator-style=slash --group-directories-first"  
+alias ll="LC_ALL='C' ls --almost-all --human-readable -l --color --indicator-style=slash --group-directories-first"  
 
 
 # search everything!
