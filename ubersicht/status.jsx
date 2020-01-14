@@ -1,4 +1,4 @@
-let refreshFrequencyInSeconds = 30; 
+let refreshFrequencyInSeconds = 5; 
 
 var dayNames = [
     "Sun",
