@@ -2,7 +2,9 @@
 source ~/.profile
 
 # use GNU utilities instead of BSD utilities
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/findutils/libexec/gnubin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
+
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # Autodesk onboarding puts all their stuff here
