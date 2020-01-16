@@ -44,3 +44,5 @@ alt - r : kitty --single-instance ranger ~/workspace
 # https://apple.stackexchange.com/questions/305901/open-a-new-browser-window-from-terminal/305902#305902?s=daffdeaf3b36431dabe86ffde93950d1
 shift + alt - w : open -na "Google Chrome" --args --new-window 
 alt - 0x32 : kitty --single-instance ~/bin/fzf_emoji # backtick
+
+alt - q : yabai -m window --close
