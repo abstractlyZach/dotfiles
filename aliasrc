@@ -10,13 +10,3 @@ alias la="LC_ALL='C' ls --almost-all --color --indicator-style=slash --group-dir
 alias ls="LC_ALL='C' ls --color --indicator-style=slash --group-directories-first"
 # long, detailed listing
 alias ll="LC_ALL='C' ls --almost-all --human-readable -l --color --indicator-style=slash --group-directories-first"  
-
-
-# search everything!
-se() { du -a --exclude=".git" ~/workspace/dotfiles/ ~/bin/ ~/workspace/zarbs/ | awk '{print $2}' | fzf | xargs -r $EDITOR ;}
-
-pgpy() {
-	find ~/workspace/plangrid -name *.py  | 
-		fzf --reverse | 
-		xargs --no-run-if-empty $EDITOR
-}

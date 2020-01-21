@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+# change directory anywhere
+function cdd() {
+	target_dir=$(find ~ -type d -not -path '*/\.git*' -not -path '*/__pycache__' 2>/dev/null | 
+		fzf --reverse) 
+	[[ -z $target_dir ]] || cd $target_dir
+}
+
+# search everything!
+se() { du -a --exclude=".git" ~/workspace/dotfiles/ ~/bin/ ~/workspace/zarbs/ | awk '{print $2}' | fzf | xargs -r $EDITOR ;}
+
+# open a PlanGrid python file
+pgpy() {
+	find ~/workspace/plangrid -name *.py  | 
+		fzf --reverse | 
+		xargs --no-run-if-empty $EDITOR
+}
