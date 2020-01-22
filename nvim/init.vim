@@ -21,8 +21,11 @@ call plug#begin('~/.config/nvim/plugged')
 	" Allows for basic directory navigation in vim
 	Plug 'scrooloose/nerdtree'
 
-	"aesthetic color schemes
+	" aesthetic color schemes
 	Plug 'arcticicestudio/nord-vim'
+
+	" Python autocompletion and other magic
+	Plug 'davidhalter/jedi-vim'
 
 call plug#end()
 
@@ -47,7 +50,7 @@ set mouse=a
 	autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " toggle nerdtree
-map <leader>n :NERDTreeToggle<CR>
+map <leader>f :NERDTreeToggle<CR>
 
 " spellcheck
 map <leader>o :setlocal spell! spelllang=en_us<CR>
