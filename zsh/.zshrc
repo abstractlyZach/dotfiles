@@ -80,6 +80,14 @@ if [[ ! "$PATH" == */home/zach/.fzf/bin* ]]; then
   export PATH="${PATH:+${PATH}:}/home/zach/.fzf/bin"
 fi
 
+unamestr=$(uname)
+# start virtualenvwrapper
+if [[ "$unamestr" == "Linux" ]]; then
+	source "$HOME/.local/bin/virtualenvwrapper.sh"
+else
+	source $(which virtualenvwrapper.sh)
+fi
+
 SPACESHIP_USER_SHOW=always
 SPACESHIP_USER_SUFFIX=""
 SPACESHIP_HOST_PREFIX="@"
