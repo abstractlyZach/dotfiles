@@ -14,4 +14,3 @@ source ~/.bashrc
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 source ~/.config/zsh/.zshrc
-

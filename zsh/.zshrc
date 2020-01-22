@@ -79,3 +79,31 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/nul
 if [[ ! "$PATH" == */home/zach/.fzf/bin* ]]; then
   export PATH="${PATH:+${PATH}:}/home/zach/.fzf/bin"
 fi
+
+SPACESHIP_USER_SHOW=always
+SPACESHIP_USER_SUFFIX=""
+SPACESHIP_HOST_PREFIX="@"
+SPACESHIP_HOST_SHOW=always
+SPACESHIP_PROMPT_SEPARATE_LINE=true
+SPACESHIP_VENV_PREFIX="(🐍 "
+SPACESHIP_VENV_SUFFIX=")"
+SPACESHIP_VENV_COLOR="red"
+SPACESHIP_GIT_SYMBOL="🦥 "
+
+SPACESHIP_PROMPT_ORDER=(
+  user          # Username section
+  host
+  dir           # Current directory section
+  git
+  node
+  docker
+  venv
+  line_sep      # line break
+  jobs
+  exit_code
+  char
+)
+
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt spaceship
