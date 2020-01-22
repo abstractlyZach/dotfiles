@@ -8,12 +8,4 @@ export BROWSER="firefox"
 
 export PATH="$PATH":~/bin
 
-unamestr=$(uname)
-if [[ "$unamestr" == "Ubuntu" ]]; then
-	# start virtualenvwrapper
-	source ~/.local/bin/virtualenvwrapper.sh
-else
-	source $(which virtualenvwrapper.sh)
-fi
-
 export WORKON_HOME=~/.virtual_envs
