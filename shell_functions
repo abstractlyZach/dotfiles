@@ -2,7 +2,7 @@
 
 # change directory anywhere
 function cdd() {
-	target_dir=$(find ~ -type d -not -path '*/\.git*' -not -path '*/__pycache__' 2>/dev/null | 
+	target_dir=$(find ~ -type d -not -path '*/\.git*' -not -path '*/__pycache__' -not -path '*/.virtualenvs/*' 2>/dev/null | 
 		fzf --reverse) 
 	[[ -z $target_dir ]] || cd $target_dir
 }
