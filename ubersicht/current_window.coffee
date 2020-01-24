@@ -1,6 +1,5 @@
 # Get the current window and display it in the middle of the status bar
-
-command: '/usr/local/bin/yabai -m query --windows --window mouse 2>/dev/null | /usr/local/bin/jq ".app" | tr -d \'"\''
+command: '/usr/local/bin/yabai -m query --windows --window mouse 2>/dev/null | /usr/local/bin/jq ".app" 2>/dev/null | tr -d \'"\''
 
 refreshFrequency: 500
 
