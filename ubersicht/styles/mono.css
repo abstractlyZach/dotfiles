@@ -1,0 +1,100 @@
+/* 
+Consolidating the css here allows for theme-switching
+original idea from:
+https://github.com/pacocoursey/home
+
+theme.coffee and focused-window.coffee do the reloading every 1s.
+*/
+:root {
+  /* try this? load symlink in css-loader first */
+  --c1: #D8DEE9;
+  --bg: #3B4252;
+/*  --c1: var(--color1);
+  --bg: var(--background);*/
+}
+
+/*#__uebersicht div {*/
+*[id*='amar-bar-widget'] {
+/*div div {*/
+  color: var(--c1);
+  background-color: var(--bg);
+
+  /* note - can't use opacity with divdiv, since it affects things weirdly */
+
+  font-family: 'Inconsolata';
+  font-size: 13px;
+  webkit-font-smoothing: antialiased;
+}
+
+
+.current_window, .charging, .battery, .time, .cal {
+  font-family: 'Inconsolata';
+  font-size: 14px;
+  color: var(--c1);
+}
+
+/* todo? consolidate `style`s? this doesn't seem high priority */
+/*
+.battery {
+  font-size: 12px;
+  top: 7px;
+  right: 195px;
+}
+
+.charging {
+  top: 4px;
+  right: 247px;
+}
+
+.cpu {
+  font-size: 10px;
+  top: 7px;
+  right: 315px;
+}
+
+.cal span{
+  top: 6px;
+  right: 93px;
+}
+
+.mem span:first-child{
+  font-size: 10px;
+  top: 7.5px;
+  right: 268px;
+}
+
+.np {
+  top: 6px;
+  left: 25%;
+  height: 16px;
+  width: 50%;
+}
+*/
+
+.foc {
+  /*font-size: 11px;*/
+
+  height: 18px;
+  /*left: 10px;*/
+  top: 0px;
+  padding-top: 7px;
+
+  width: auto;
+  white-space: nowrap;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.focused {
+  font-size: 11px;
+}
+
+span .list {
+  display: inline;
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 11px;
+  padding-left: 9px;
+  padding-right: 8px;
+}

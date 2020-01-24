@@ -5,7 +5,7 @@ export const command = yabai + " -m query --spaces";
 export const refreshFrequency = false;
 
 export const className = {
-  top: 10,
+  top: 5,
   left: 40,
   color: '#ccc',
   fontFamily: 'Inconsolata',
