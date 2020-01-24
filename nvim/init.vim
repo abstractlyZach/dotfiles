@@ -11,6 +11,9 @@ endif
 
 " Install plugins
 call plug#begin('~/.config/nvim/plugged')
+	
+	" coffeescript syntax highlighting
+	Plug 'kchmck/vim-coffee-script'
 
 	" Makes a nice status bar at the bottom of vim
 	Plug 'vim-airline/vim-airline'
