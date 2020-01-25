@@ -3,7 +3,10 @@
 # change directory anywhere
 function cdd() {
 	target_dir=$(find ~ -type d -not -path '*/\.git*' -not -path '*/__pycache__' -not -path '*/.virtualenvs/*' -not -path '*/nvim/plugged/*' 2>/dev/null | 
-		fzf --reverse) 
+		sed "s,$HOME,~," |
+		fzf --reverse --color=light |
+		sed "s,~,$HOME,"
+	) 
 	[[ -z $target_dir ]] || cd $target_dir
 }
 
