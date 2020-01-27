@@ -14,8 +14,11 @@ function cdd() {
 se() { du -a --exclude=".git" ~/workspace/dotfiles/ ~/bin/ ~/workspace/zarbs/ | awk '{print $2}' | fzf | xargs -r $EDITOR ;}
 
 # open a PlanGrid python file
+PLANGRID_DIR="$HOME/workspace/plangrid"
 pgpy() {
-	find ~/workspace/plangrid -name *.py  | 
+	find "$PLANGRID_DIR" -name "*.py"  | 
+		sed "s,$PLANGRID_DIR,👷," |
 		fzf --reverse | 
+		sed "s,👷,$PLANGRID_DIR," |
 		xargs --no-run-if-empty $EDITOR
 }
