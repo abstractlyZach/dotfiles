@@ -12,6 +12,9 @@ endif
 " Install plugins
 call plug#begin('~/.config/nvim/plugged')
 	
+	" simple commenting
+	Plug 'tpope/vim-commentary'
+
 	" coffeescript syntax highlighting
 	Plug 'kchmck/vim-coffee-script'
 
