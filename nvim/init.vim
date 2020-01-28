@@ -11,6 +11,9 @@ endif
 
 " Install plugins
 call plug#begin('~/.config/nvim/plugged')
+
+	" anything that surrounds: parens, brackets, quotes, tags, etc.
+	Plug 'tpope/vim-surround'
 	
 	" simple commenting
 	Plug 'tpope/vim-commentary'
