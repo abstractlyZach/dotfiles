@@ -22,3 +22,12 @@ pgpy() {
 		sed "s,👷,$PLANGRID_DIR," |
 		xargs --no-run-if-empty $EDITOR
 }
+
+# fuzzy extension finder
+# search all files that end with a certain extension
+fx() {
+	[[ -z "$1" ]] && echo "Fuzzy extension finder: need to specify an extension" && return 1 # test for empty 
+	find . -name "*.$1" 2>/dev/null |
+	fzf --reverse |
+	xargs --no-run-if-empty $EDITOR
+}
