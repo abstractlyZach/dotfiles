@@ -82,3 +82,7 @@ map <leader>h :nohlsearch<CR>
 	noremap <Down> <nop>
 	noremap <Left> <nop>
 	noremap <Right> <nop>
+
+" Set python3 executable since virtualenv messes things up when nvim looks for 'python' in path
+	" Note: this is where it is installed on the macbook
+	let g:python3_host_prog = '/usr/bin/python3'
