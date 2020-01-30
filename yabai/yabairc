@@ -47,7 +47,7 @@ yabai -m config window_gap                   7
 # window rules
 yabai -m rule --add app="Microsoft Outlook" space=2
 yabai -m rule --add app=Slack space=3
-yabai -m rule --add app=Spotify space=5
+yabai -m rule --add app=Spotify space=1
 yabai -m rule --add app="^System Preferences$" manage=off
 
 # signals
