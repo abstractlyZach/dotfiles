@@ -30,6 +30,7 @@ shift + alt - 5 : yabai -m window --space 5
 shift + alt - 6 : yabai -m window --space 6
 shift + alt - 7 : yabai -m window --space 7
 shift + alt - 8 : yabai -m window --space 8
+shift + alt - 9 : yabai -m window --space 9
 
 # send window to display
 shift + alt - 0x2B : yabai -m window --display next || yabai -m window --display prev  # comma
@@ -42,7 +43,7 @@ alt - i : kitty --single-instance htop
 alt - r : kitty --single-instance ranger ~/workspace
 # open new chrome window
 # https://apple.stackexchange.com/questions/305901/open-a-new-browser-window-from-terminal/305902#305902?s=daffdeaf3b36431dabe86ffde93950d1
-shift + alt - w : open -na "Google Chrome" --args --new-window 
+shift + alt - w : open -na "Brave Browser" --args --new-window 
 alt - 0x32 : kitty --single-instance ~/bin/fzf_emoji # backtick
 
 alt - q : yabai -m window --close
