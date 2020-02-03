@@ -117,3 +117,8 @@ SPACESHIP_PROMPT_ORDER=(
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
 prompt spaceship
+
+# Setup fzf
+if [[ ! "$PATH" == */home/zach/workspace/fzf/bin* ]]; then
+  export PATH="${PATH:+${PATH}:}/home/zach/workspace/fzf/bin"
+fi
