@@ -4,7 +4,7 @@ export TERMINAL="st"
 export SHELL="zsh"
 export EDITOR="nvim"
 export FILE="ranger"
-export BROWSER="firefox"
+export BROWSER="brave-browser"
 
 export PATH="$PATH":~/bin
 
