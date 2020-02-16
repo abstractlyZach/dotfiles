@@ -6,6 +6,6 @@ export EDITOR="nvim"
 export FILE="ranger"
 export BROWSER="brave-browser"
 
-export PATH="$PATH":~/bin
+export PATH="$PATH":~/bin:~/.local/bin
 
 export WORKON_HOME=~/.virtual_envs
