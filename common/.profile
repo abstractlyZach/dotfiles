@@ -6,6 +6,8 @@ export EDITOR="nvim"
 export FILE="ranger"
 export BROWSER="brave-browser"
 
+export SUDO_ASKPASS="$HOME/bin/dmenupass"
+
 export PATH="$PATH":~/bin:~/.local/bin
 
 export WORKON_HOME=~/.virtual_envs
