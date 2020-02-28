@@ -82,6 +82,10 @@ map <leader>h :nohlsearch<CR>
 	noremap <Down> <nop>
 	noremap <Left> <nop>
 	noremap <Right> <nop>
+	inoremap <Up> <nop>
+	inoremap <Down> <nop>
+	inoremap <Left> <nop>
+	inoremap <Right> <nop>
 
 " Set python3 executable since virtualenv messes things up when nvim looks for 'python' in path
 	" Note: this is where it is installed on the macbook
@@ -89,3 +93,15 @@ map <leader>h :nohlsearch<CR>
 
 " Compile document, be it groff/LaTeX/markdown/etc.
 	map <leader>c :w! \| !compile <c-r>%<CR>
+
+" Keep a banner listing the open tabs at the top
+	let g:airline#extensions#tabline#enabled = 1
+
+" Case-insensitive search
+	set ignorecase
+" Use case-sensitive search if you use a capital letter
+" https://vim.fandom.com/wiki/Searching#Case_sensitivity
+	set smartcase
+
+" close buffer
+	map <leader>x :bdelete<CR>
