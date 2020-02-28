@@ -4,8 +4,10 @@ export TERMINAL="st"
 export SHELL="zsh"
 export EDITOR="nvim"
 export FILE="ranger"
-export BROWSER="firefox"
+export BROWSER="brave-browser"
 
-export PATH="$PATH":~/bin
+export SUDO_ASKPASS="$HOME/bin/dmenupass"
+
+export PATH="$PATH":~/bin:~/.local/bin
 
 export WORKON_HOME=~/.virtual_envs

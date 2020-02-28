@@ -55,6 +55,11 @@ set mouse=a
 	" highlight the current line
 	set cursorline
 
+" Make tab characters look like 4 spaces
+	set softtabstop=4
+	set shiftwidth=4
+	set noexpandtab
+
 " Disables automatic commenting on newline:
 	autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
