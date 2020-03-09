@@ -9,6 +9,8 @@ if ! filereadable(expand('~/.config/nvim/autoload/plug.vim'))
 endif
 
 
+" {{{ plugins
+
 " Install plugins
 call plug#begin('~/.config/nvim/plugged')
 
@@ -33,12 +35,9 @@ call plug#begin('~/.config/nvim/plugged')
 	" aesthetic color schemes
 	Plug 'arcticicestudio/nord-vim'
 
-	" Python autocompletion and other magic
-	Plug 'davidhalter/jedi-vim'
-
 call plug#end()
 
-
+" }}}
 
 " Use the nord color scheme
 colorscheme nord
@@ -47,7 +46,11 @@ colorscheme nord
 set mouse=a
 
 " Some basics:
-	set nocompatible
+	" disable backwards compatibility with vi and enter the 21st century
+	set nocompatible 
+	" Search down into subfolders
+	" Provides tab-completion for all file-related tasks
+	set path+=**
 	filetype plugin on
 	syntax on
 	set encoding=utf-8
@@ -67,7 +70,16 @@ set mouse=a
 map <leader>f :NERDTreeToggle<CR>
 
 " spellcheck
-map <leader>o :setlocal spell! spelllang=en_us<CR>
+map <leader>s :setlocal spell! spelllang=en_us<CR>
+
+" open file
+map <leader>d :find 
+
+" compile tags for the current directory
+map <leader>n :!ctags -R .<CR>
+
+" run make test in the current directory
+map <leader>m :make test<CR>
 
 " turn off highlighting in searches
 map <leader>h :nohlsearch<CR>
@@ -110,3 +122,12 @@ map <leader>h :nohlsearch<CR>
 
 " close buffer
 	map <leader>x :bdelete<CR>
+
+" Read an empty HTML template and move cursor to title
+    nnoremap <leader>html :-1read $HOME/.config/skeleton.html<CR>3jwf>a
+    
+" search insights for occurrences
+    map <leader>a yiw:grep "<C-R>0" -irI insights<CR>
+
+" copy current relative path to the clipboard
+    map <leader>q :let @+ = expand("%")<CR>
