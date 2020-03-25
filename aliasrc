@@ -11,3 +11,5 @@ alias ls="LC_ALL='C' ls --color --indicator-style=slash --group-directories-firs
 # long, detailed listing
 alias ll="LC_ALL='C' ls --almost-all --human-readable -l --color --indicator-style=slash --group-directories-first"  
 alias gd="git difftool"
+# read-only mode
+alias vr="$EDITOR -R"
