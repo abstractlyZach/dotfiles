@@ -1,5 +1,5 @@
 # needs to be manually run since .bash_profile will get picked up before ~/.profile
-source ~/.profile
+source ~/.config/common/.profile
 
 # use GNU utilities instead of BSD utilities
 export PATH="/usr/local/opt/findutils/libexec/gnubin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
@@ -8,7 +8,7 @@ export PATH="/usr/local/opt/findutils/libexec/gnubin:/usr/local/opt/coreutils/li
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # Autodesk onboarding puts all their stuff here
-source ~/.bashrc
+source ~/.config/plangrid/.bashrc
 
 # add java stuff to path
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
@@ -32,7 +32,3 @@ export PATH=${extra_python_path}:$PATH
 export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
 export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include"
 export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
-
-  # Set Spaceship ZSH as a prompt
-  autoload -U promptinit; promptinit
-  prompt spaceship

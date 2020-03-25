@@ -20,3 +20,6 @@ mimeapps.list
 
 # ranger history
 ranger/history
+
+.zsh_history
+.zcompdump
