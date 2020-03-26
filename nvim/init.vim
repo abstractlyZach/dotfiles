@@ -78,8 +78,8 @@ map <leader>d :find
 " compile tags for the current directory
 map <leader>n :!ctags -R .<CR>
 
-" run make test in the current directory
-map <leader>m :make test<CR>
+" save the file and run make test in the current directory
+map <leader>m :w<CR>:make test<CR>
 
 " turn off highlighting in searches
 map <leader>h :nohlsearch<CR>
