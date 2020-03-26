@@ -14,7 +14,6 @@ basics:
 
 ubuntu:
 	make basics
-	stow --verbose=2 zsh
 	stow --verbose=2 Xserver
 	# load the Xresources file
 	xrdb "$(HOME)/.Xresources"
