@@ -14,3 +14,4 @@ export WORKON_HOME=~/.virtual_envs
 
 # ~/ Cleanup
 export LESSHISTFILE="-"
+export GNUPGHOME="$HOME/.config/gnupg/"
