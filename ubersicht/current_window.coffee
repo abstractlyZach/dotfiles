@@ -15,6 +15,7 @@ update: (output, el) ->
 style: """
   top: 7px;
   width: 100%;
-  text-align: center;
+  left: 300px;
+  text-align: left;
   font-weight: bold;
 """
