@@ -13,6 +13,10 @@ source ~/.config/plangrid/.bashrc
 # add java stuff to path
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
+# local directory for ruby stuff
+export GEM_HOME=~/.local/ruby
+export PATH="$PATH:$HOME/.local/ruby/bin"
+
 source ~/.config/zsh/.zshrc
 
 # added by Snowflake SnowSQL installer v1.2
