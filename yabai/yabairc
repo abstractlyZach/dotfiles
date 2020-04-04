@@ -49,6 +49,7 @@ yabai -m rule --add app="Microsoft Outlook" space=2
 yabai -m rule --add app=Slack space=3
 yabai -m rule --add app=Spotify space=1
 yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^Google Chrome$" manage=off
 
 # signals
 yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
