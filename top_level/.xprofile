@@ -1,0 +1,6 @@
+setbg &				# set the background image
+dwmbar &			# status bar
+dunst &				# notification daemon
+sxhkd &				# used for binding hotkeys
+xcompmgr &			# window transparency manager
+xrdb ~/.config/Xresources &	# use the colors/settings on startup
