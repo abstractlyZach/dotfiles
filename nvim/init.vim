@@ -20,6 +20,9 @@ call plug#begin('~/.config/nvim/plugged')
 	" simple commenting
 	Plug 'tpope/vim-commentary'
 
+	" git in vim!
+	Plug 'tpope/vim-fugitive'
+
 	" coffeescript syntax highlighting
 	Plug 'kchmck/vim-coffee-script'
 
@@ -28,6 +31,9 @@ call plug#begin('~/.config/nvim/plugged')
 
 	" Adds syntax highlighting for sxhkd files
 	Plug 'kovetskiy/sxhkd-vim'
+
+	" Syntax highlighting for typescript
+	Plug 'leafgarland/typescript-vim'
 
 	" Allows for basic directory navigation in vim
 	Plug 'scrooloose/nerdtree'
@@ -126,8 +132,21 @@ map <leader>h :nohlsearch<CR>
 " Read an empty HTML template and move cursor to title
     nnoremap <leader>html :-1read $HOME/.config/skeleton.html<CR>3jwf>a
     
-" search insights for occurrences
-    map <leader>a yiw:grep "<C-R>0" -irI insights<CR>
+" search the current git directory for the word under the cursor
+    " map <leader>a yiw:grep "<C-R>0" -irI insights tests<CR>
+    map <leader>a yiw:G grep "<C-R>0" <CR>
 
 " copy current relative path to the clipboard
     map <leader>q :let @+ = expand("%")<CR>
+
+" run nosetests on file
+    map <leader>w :w<CR>:!nosetests tests/server/handlers/v2/project_milestones/<CR>
+
+" typescript syntax highlighting
+    autocmd BufRead,BufNewFile *.tsx set filetype=typescript
+
+" automatically load up this file whenever it changes in vim
+    autocmd BufWritePost *init.vim source %
+
+" shortcut to edit this file
+    map <leader>v :e ~/.config/nvim/init.vim<CR>
