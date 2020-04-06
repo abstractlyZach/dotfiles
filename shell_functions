@@ -16,7 +16,7 @@ se() { du -a --exclude=".git" ~/.config/ ~/bin/ ~/workspace/zarbs/ | awk '{print
 # open a PlanGrid python file
 PLANGRID_DIR="$HOME/workspace/plangrid"
 pgpy() {
-	find "$PLANGRID_DIR" -name "*.py"  | 
+	fd --full-path "$PLANGRID_DIR" --extension py  | 
 		sed "s,$PLANGRID_DIR,👷," |
 		fzf --reverse | 
 		sed "s,👷,$PLANGRID_DIR," |
