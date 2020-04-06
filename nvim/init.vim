@@ -82,6 +82,9 @@ call plug#end()
 
     autocmd BufRead init.vim set foldmethod=marker
 
+    " turn off git branch info in status line. Clutters up the screen in splitview
+    let g:airline_section_b = ""
+
 " Shortcutting split navigation, saving a keypress:
     map <C-h> <C-w>h
     map <C-j> <C-w>j
