@@ -79,6 +79,10 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/nul
 if [[ ! "$PATH" == */home/zach/.fzf/bin* ]]; then
   export PATH="${PATH:+${PATH}:}/home/zach/.fzf/bin"
 fi
+# use colored fd for fzf
+export FZF_DEFAULT_COMMAND="fd --type file --color=always"
+export FZF_DEFAULT_OPTS="--ansi --reverse"
+
 
 unamestr=$(uname)
 # start virtualenvwrapper
