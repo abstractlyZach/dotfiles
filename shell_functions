@@ -11,7 +11,7 @@ function cdd() {
 }
 
 # search everything!
-se() { du -a --exclude=".git" ~/workspace/dotfiles/ ~/bin/ ~/workspace/zarbs/ | awk '{print $2}' | fzf | xargs -r $EDITOR ;}
+se() { du -a --exclude=".git" ~/.config/ ~/bin/ ~/workspace/zarbs/ | awk '{print $2}' | fzf | xargs -r $EDITOR ;}
 
 # open a PlanGrid python file
 PLANGRID_DIR="$HOME/workspace/plangrid"
