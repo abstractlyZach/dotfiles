@@ -12,36 +12,38 @@ endif
 " }}}
 " {{{ Install plugins
 call plug#begin('~/.config/nvim/plugged')
+    "fuzzy finding
+    Plug 'junegunn/fzf'
 
-	" anything that surrounds: parens, brackets, quotes, tags, etc.
-	Plug 'tpope/vim-surround'
-	
-	" simple commenting
-	Plug 'tpope/vim-commentary'
+    " anything that surrounds: parens, brackets, quotes, tags, etc.
+    Plug 'tpope/vim-surround'
+    
+    " simple commenting
+    Plug 'tpope/vim-commentary'
 
-	" git in vim!
-	Plug 'tpope/vim-fugitive'
+    " git in vim!
+    Plug 'tpope/vim-fugitive'
 
-	" coffeescript syntax highlighting
-	Plug 'kchmck/vim-coffee-script'
+    " coffeescript syntax highlighting
+    Plug 'kchmck/vim-coffee-script'
 
-	" Makes a nice status bar at the bottom of vim
-	Plug 'vim-airline/vim-airline'
+    " Makes a nice status bar at the bottom of vim
+    Plug 'vim-airline/vim-airline'
 
-	" Adds syntax highlighting for sxhkd files
-	Plug 'kovetskiy/sxhkd-vim'
+    " Adds syntax highlighting for sxhkd files
+    Plug 'kovetskiy/sxhkd-vim'
 
-	" Syntax highlighting for typescript
-	Plug 'leafgarland/typescript-vim'
+    " Syntax highlighting for typescript
+    Plug 'leafgarland/typescript-vim'
 
-	" Allows for basic directory navigation in vim
-	Plug 'scrooloose/nerdtree'
+    " Allows for basic directory navigation in vim
+    Plug 'scrooloose/nerdtree'
 
-	" aesthetic color schemes
-	Plug 'arcticicestudio/nord-vim'
+    " aesthetic color schemes
+    Plug 'arcticicestudio/nord-vim'
 
-	" python syntax folding
-	Plug 'tmhedberg/SimpylFold'
+    " python syntax folding
+    Plug 'tmhedberg/SimpylFold'
 
 call plug#end()
 " }}}
