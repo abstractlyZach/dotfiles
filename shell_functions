@@ -13,7 +13,7 @@ function cdd() {
 
 # search everything!
 se() {
-    fd --type f . "$HOME" | 
+    fd --type f . "$HOME" "$HOME/.config" | 
 	fzf | 
 	xargs -r $EDITOR
 }
