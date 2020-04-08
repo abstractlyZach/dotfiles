@@ -168,4 +168,7 @@ call plug#end()
 
     " shortcut to edit this file
     map <leader>v :e ~/.config/nvim/init.vim<CR>
+
+    " run typechecks on the working directory
+    map <leader>t :make typecheck<CR>
 " }}}
