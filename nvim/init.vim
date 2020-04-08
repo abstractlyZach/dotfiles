@@ -12,6 +12,9 @@ endif
 " }}}
 " {{{ Install plugins
 call plug#begin('~/.config/nvim/plugged')
+    " stop using inefficient movement!
+    Plug 'takac/vim-hardtime'
+
     "fuzzy finding
     Plug 'junegunn/fzf'
 
@@ -110,6 +113,9 @@ call plug#end()
 " Set python3 executable since virtualenv messes things up when nvim looks for 'python' in path
     " Note: this is where it is installed on the macbook
     let g:python3_host_prog = '/usr/bin/python3'
+
+" turn on vim hardtime
+    let g:hardtime_default_on = 1
 
 "}}}
 
