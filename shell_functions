@@ -2,32 +2,38 @@
 
 # change directory anywhere
 function cdd() {
-	target_dir=$(find ~ -type d -not -path '*/\.git*' -not -path '*/__pycache__' -not -path '*/.virtualenvs/*' -not -path '*/nvim/plugged/*' 2>/dev/null | 
-		sed "s,$HOME,~," |
-		fzf --reverse --color=light |
-		sed "s,~,$HOME,"
-	) 
-	[[ -z $target_dir ]] || cd $target_dir
+    target_dir=$(
+	fd --type d --absolute-path . "$HOME" |
+	    sed "s,$HOME,~," |
+	    fzf --reverse --color=light |
+	    sed "s,~,$HOME,"
+    ) 
+    [[ -z $target_dir ]] || cd $target_dir
 }
 
 # search everything!
-se() { du -a --exclude=".git" ~/.config/ ~/bin/ ~/workspace/zarbs/ | awk '{print $2}' | fzf | xargs -r $EDITOR ;}
+se() {
+    fd --type f . "$HOME" | 
+	fzf | 
+	xargs -r $EDITOR
+}
 
 # open a PlanGrid python file
 PLANGRID_DIR="$HOME/workspace/plangrid"
 pgpy() {
-	fd --full-path "$PLANGRID_DIR" --extension py  | 
-		sed "s,$PLANGRID_DIR,👷," |
-		fzf --reverse | 
-		sed "s,👷,$PLANGRID_DIR," |
-		xargs --no-run-if-empty $EDITOR
+    fd --extension py  --absolute-path . "$PLANGRID_DIR" |
+	sed "s,$PLANGRID_DIR,👷," |
+	fzf --reverse | 
+	sed "s,👷,$PLANGRID_DIR," |
+	xargs --no-run-if-empty $EDITOR
 }
 
 # fuzzy extension finder
 # search all files that end with a certain extension
 fx() {
-	[[ -z "$1" ]] && echo "Fuzzy extension finder: need to specify an extension" && return 1 # test for empty 
-	find . -name "*.$1" 2>/dev/null |
+    # test for empty 
+    [[ -z "$1" ]] && echo "Fuzzy extension finder: need to specify an extension" && return 1 
+    fd --extension "$1" --absolute-path . "$HOME" |
 	fzf --reverse |
 	xargs --no-run-if-empty $EDITOR
 }
