@@ -63,9 +63,6 @@ call plug#end()
 " Some basics:
     " disable backwards compatibility with vi and enter the 21st century
     set nocompatible 
-    " Search down into subfolders
-    " Provides tab-completion for all file-related tasks
-    set path+=**
     filetype plugin on
     syntax on
     set encoding=utf-8
@@ -77,6 +74,7 @@ call plug#end()
     set softtabstop=4
     set shiftwidth=4
     set noexpandtab
+    autocmd FileType typescript setlocal expandtab
 "}}}
 " Disables automatic commenting on newline:
     autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -84,6 +82,7 @@ call plug#end()
     autocmd BufWritePost *init.vim source %
     " typescript syntax highlighting
     autocmd BufRead,BufNewFile *.tsx set filetype=typescript
+    autocmd FileType typescript setlocal foldmethod=syntax
 
     autocmd BufRead init.vim set foldmethod=marker
 
@@ -126,11 +125,11 @@ call plug#end()
     " spellcheck
     map <leader>s :setlocal spell! spelllang=en_us<CR>
 
-    " open file
-    map <leader>d :find 
+    " use fuzzy-find to search for a file
+    map <leader>d :FZF<CR>
 
     " compile tags for the current directory
-    map <leader>n :!ctags -R .<CR>
+    map <leader>n :!ctags -R --exclude=@$HOME/.config/.ctagsignore .<CR>
 
     " save the file and run make test in the current directory
     map <leader>m :w<CR>:make test<CR>
@@ -164,7 +163,7 @@ call plug#end()
     map <leader>q :let @+ = expand("%")<CR>
 
     " run nosetests on file
-    map <leader>w :w<CR>:!nosetests tests/server/handlers/v2/project_milestones/<CR>
+    map <leader>w :!nosetests tests/shared/models/ tests/server/handlers/v2/test_project_handler.py<CR>
 
     " shortcut to edit this file
     map <leader>v :e ~/.config/nvim/init.vim<CR>
