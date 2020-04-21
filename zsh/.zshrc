@@ -80,7 +80,7 @@ if [[ ! "$PATH" == */home/zach/.fzf/bin* ]]; then
   export PATH="${PATH:+${PATH}:}/home/zach/.fzf/bin"
 fi
 # use colored fd for fzf
-export FZF_DEFAULT_COMMAND="fd --type file --color=always --hidden"
+export FZF_DEFAULT_COMMAND="fd --type file --color=always --hidden --exclude .git"
 export FZF_DEFAULT_OPTS="--ansi --reverse"
 
 # local directory for ruby stuff
