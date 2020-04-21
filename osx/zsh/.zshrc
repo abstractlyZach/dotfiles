@@ -35,4 +35,4 @@ export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
 
 # OSX doesn't know how to open stuff in browsers, since it wants to promot its own
 #   `open` command, so clear this variable
-unset $BROWSER
+unset BROWSER
