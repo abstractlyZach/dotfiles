@@ -129,7 +129,7 @@ call plug#end()
     map <leader>d :FZF<CR>
 
     " compile tags for the current directory
-    map <leader>n :!ctags -R --exclude=@$HOME/.config/.ctagsignore .<CR>
+    map <leader>n :!ctags -R --exclude=@$HOME/.config/.ctagsignore --python-kinds=-i .<CR>
 
     " save the file and run make test in the current directory
     map <leader>m :w<CR>:make test<CR>
