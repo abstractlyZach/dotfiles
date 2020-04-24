@@ -83,6 +83,9 @@ call plug#end()
     " typescript syntax highlighting
     autocmd BufRead,BufNewFile *.tsx set filetype=typescript
     autocmd FileType typescript setlocal foldmethod=syntax
+    autocmd FileType typescript set tabstop=2
+    autocmd FileType typescript set softtabstop=2
+    autocmd FileType typescript set shiftwidth=2
 
     autocmd BufRead init.vim set foldmethod=marker
 
