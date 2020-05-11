@@ -33,6 +33,9 @@ export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
 export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include"
 export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
 
+# swagger
+export PATH="/usr/local/opt/swagger-codegen@2/bin:$PATH"
+
 # OSX doesn't know how to open stuff in browsers, since it wants to promot its own
 #   `open` command, so clear this variable
 unset BROWSER
