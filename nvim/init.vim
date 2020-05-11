@@ -126,6 +126,7 @@ call plug#end()
     let g:hardtime_default_on = 1
 
     let g:black_virtualenv = '/Users/leez/.virtualenvs/nvim/'
+    autocmd BufWritePre *.py execute ':Black'
 
 "}}}
 
