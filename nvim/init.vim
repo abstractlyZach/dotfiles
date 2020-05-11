@@ -48,6 +48,12 @@ call plug#begin('~/.config/nvim/plugged')
     " python syntax folding
     Plug 'tmhedberg/SimpylFold'
 
+    " automatically close brackets and quotes
+    Plug 'jiangmiao/auto-pairs'
+
+    " the uncompromising Python code formatter
+    Plug 'psf/black', { 'tag': '19.10b0' } " use this tag until master is stable again
+
 call plug#end()
 " }}}
 " }}}
@@ -114,10 +120,12 @@ call plug#end()
 
 " Set python3 executable since virtualenv messes things up when nvim looks for 'python' in path
     " Note: this is where it is installed on the macbook
-    let g:python3_host_prog = '/usr/bin/python3'
+    let g:python3_host_prog = '/Users/leez/.virtualenvs/nvim/bin/python'
 
 " turn on vim hardtime
     let g:hardtime_default_on = 1
+
+    let g:black_virtualenv = '/Users/leez/.virtualenvs/nvim/'
 
 "}}}
 
