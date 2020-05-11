@@ -52,7 +52,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'jiangmiao/auto-pairs'
 
     " the uncompromising Python code formatter
-    Plug 'psf/black', { 'tag': '19.10b0' } " use this tag until master is stable again
+    Plug 'psf/black', { 'branch': 'stable' }
 
 call plug#end()
 " }}}
