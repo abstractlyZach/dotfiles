@@ -42,6 +42,9 @@ call plug#begin('~/.config/nvim/plugged')
     " Allows for basic directory navigation in vim
     Plug 'scrooloose/nerdtree'
 
+    " See hex colors in the editor
+    Plug 'ap/vim-css-color'
+
     " aesthetic color schemes
     Plug 'arcticicestudio/nord-vim'
 
