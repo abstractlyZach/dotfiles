@@ -8,7 +8,7 @@ super + r
 	$TERMINAL -e $FILE
 super + i
 	$TERMINAL -e htop
-super + shift + w
+super + w
 	$BROWSER
 
 # super + backtick (`)
@@ -21,5 +21,5 @@ super + shift + BackSpace
 	prompt "Reboot computer?" "sudo -A reboot"
 
 # wifi connection utility
-super + w
+super + shift + w
 	$TERMINAL -e sudo nmtui
