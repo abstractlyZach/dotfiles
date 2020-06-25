@@ -130,13 +130,13 @@ call plug#end()
 
 " Set python3 executable since virtualenv messes things up when nvim looks for 'python' in path
     " Note: this is where it is installed on the macbook
-    let g:python3_host_prog = expand('~/.virtual_envs/nvim/bin/python')
+    let g:python3_host_prog = expand("$WORKON_HOME/nvim/bin/python")
 
 " turn on vim hardtime
     let g:hardtime_default_on = 1
     let g:hardtime_allow_different_key = 1
 
-    let g:black_virtualenv = expand('~/.virtual_envs/nvim/')
+    let g:black_virtualenv = expand('$WORKON_HOME/nvim/')
     autocmd BufWritePre *.py execute ':Black'
 "}}}
 
