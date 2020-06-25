@@ -89,9 +89,9 @@ export PATH="$PATH:$HOME/.local/ruby/bin"
 unamestr=$(uname)
 # start virtualenvwrapper
 if [[ "$unamestr" == "Linux" ]]; then
-	source "$HOME/.local/bin/virtualenvwrapper.sh"
+	source "$HOME/.local/bin/virtualenvwrapper_lazy.sh"
 else
-	source $(which virtualenvwrapper.sh)
+	source $(which virtualenvwrapper_lazy.sh)
 fi
 
 SPACESHIP_USER_SHOW=always
