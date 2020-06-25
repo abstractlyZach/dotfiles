@@ -39,6 +39,9 @@ call plug#begin('~/.config/nvim/plugged')
     " Syntax highlighting for typescript
     Plug 'leafgarland/typescript-vim'
 
+    " Syntax highlighting for jsx in typescript
+    Plug 'peitalin/vim-jsx-typescript'
+
     " Allows for basic directory navigation in vim
     Plug 'scrooloose/nerdtree'
 
@@ -53,6 +56,9 @@ call plug#begin('~/.config/nvim/plugged')
 
     " the uncompromising Python code formatter
     Plug 'psf/black', { 'branch': 'stable' }
+
+    " make hex or color strings show up as that color in the editor
+    Plug 'ap/vim-css-color'
 
 call plug#end()
 " }}}
@@ -87,6 +93,7 @@ call plug#end()
 " automatically load up this file whenever it changes in vim
     autocmd BufWritePost *init.vim source %
     " typescript syntax highlighting
+    " autocmd BufRead,BufNewFile *.tsx set filetype=typescript.tsx
     autocmd BufRead,BufNewFile *.tsx set filetype=typescript
     autocmd FileType typescript setlocal foldmethod=syntax
     autocmd FileType typescript set tabstop=2
@@ -124,10 +131,10 @@ call plug#end()
 
 " turn on vim hardtime
     let g:hardtime_default_on = 1
+    let g:hardtime_allow_different_key = 1
 
     let g:black_virtualenv = '/Users/leez/.virtualenvs/nvim/'
     autocmd BufWritePre *.py execute ':Black'
-
 "}}}
 
 "{{{ custom commands
