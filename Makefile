@@ -10,7 +10,6 @@ osx:
 
 basics:
 	rm nvim/autoload/plug.vim || true
-	stow --verbose=2 top_level
 	stow --verbose=2 common
 
 ubuntu:
