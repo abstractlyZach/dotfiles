@@ -10,7 +10,8 @@ export SUDO_ASKPASS="$HOME/bin/dmenupass"
 
 export PATH="$PATH":~/bin:~/.local/bin
 
-export WORKON_HOME=~/.virtualenvs
+export WORKON_HOME="$HOME/.virtualenvs"
+export PROJECT_HOME="$HOME/workspace"
 
 # ~/ Cleanup
 export LESSHISTFILE="-"
