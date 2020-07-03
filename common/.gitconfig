@@ -10,3 +10,6 @@
 [alias]
 	; view git history as a graph with branches being different colors
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[pull]
+	ff = only
+
