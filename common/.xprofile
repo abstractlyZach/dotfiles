@@ -1,4 +1,5 @@
 setbg &				# set the background image
+dwmblocks &			# start dwm status bar
 dunst &				# notification daemon
 sxhkd &				# used for binding hotkeys
 xcompmgr &			# window transparency manager
