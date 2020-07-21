@@ -57,11 +57,14 @@ call plug#begin('~/.config/nvim/plugged')
     " automatically close brackets and quotes
     Plug 'jiangmiao/auto-pairs'
 
-    " the uncompromising Python code formatter
-    Plug 'psf/black', { 'branch': 'stable' }
-
     " make hex or color strings show up as that color in the editor
     Plug 'ap/vim-css-color'
+
+    " asynchronous lint engine
+    Plug 'dense-analysis/ale'
+
+    " manage virtualenv for nvim's python
+    Plug 'jmcantrell/vim-virtualenv'
 
 call plug#end()
 " }}}
@@ -136,9 +139,6 @@ call plug#end()
     let g:hardtime_default_on = 1
     let g:hardtime_allow_different_key = 1
 
-    let g:black_virtualenv = expand('$WORKON_HOME/nvim/')
-    autocmd BufWritePre *.py execute ':Black'
-"}}}
 
 "{{{ custom commands
     " toggle nerdtree
