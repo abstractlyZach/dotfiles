@@ -193,3 +193,4 @@ call plug#end()
     " run typechecks on the working directory
     map <leader>t :make typecheck<CR>
 " }}}
+" }}}
