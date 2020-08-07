@@ -16,3 +16,7 @@ ubuntu:
 	make basics
 	# load the Xresources file
 	xrdb "${HOME}/.config/Xresources"
+
+# this one must be run manually since it requires sudo
+dwm:
+	 sudo stow --verbose=2 --target="/usr/share/xsessions/" xsessions
