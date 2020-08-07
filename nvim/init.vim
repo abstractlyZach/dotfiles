@@ -185,7 +185,7 @@ call plug#end()
     map <leader>q :let @+ = expand("%")<CR>
 
     " run nosetests on file
-    map <leader>w :!nosetests tests/shared/models/ tests/server/handlers/v2/test_project_handler.py<CR>
+    map <leader>w :make quicktest<CR>
 
     " shortcut to edit this file
     map <leader>v :e ~/.config/nvim/init.vim<CR>
