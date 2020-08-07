@@ -1,0 +1,5 @@
+import readline
+
+# prevent python from writing a history file
+readline.write_history_file = lambda *args: None
+
