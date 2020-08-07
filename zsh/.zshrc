@@ -86,14 +86,6 @@ export GEM_HOME=~/.local/ruby
 export PATH="$PATH:$HOME/.local/ruby/bin"
 
 
-unamestr=$(uname)
-# start virtualenvwrapper
-if [[ "$unamestr" == "Linux" ]]; then
-	source "$HOME/.local/bin/virtualenvwrapper_lazy.sh"
-else
-	source $(which virtualenvwrapper_lazy.sh)
-fi
-
 SPACESHIP_USER_SHOW=always
 SPACESHIP_USER_SUFFIX=""
 SPACESHIP_HOST_PREFIX="@"
@@ -120,11 +112,13 @@ SPACESHIP_PROMPT_ORDER=(
   char
 )
 
-# Set Spaceship ZSH as a prompt
-autoload -U promptinit; promptinit
-prompt spaceship
 
 # Setup fzf
 if [[ ! "$PATH" == */home/zach/workspace/fzf/bin* ]]; then
   export PATH="${PATH:+${PATH}:}/home/zach/workspace/fzf/bin"
 fi
+
+# initialize pyenv with shims and autocompletion
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+export PYENV_ROOT="$(pyenv root)"

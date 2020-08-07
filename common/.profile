@@ -4,14 +4,11 @@ export TERMINAL="st"
 export SHELL="zsh"
 export EDITOR="nvim"
 export FILE="ranger"
-export BROWSER="brave-browser"
+export BROWSER="brave"
 
 export SUDO_ASKPASS="$HOME/bin/dmenupass"
 
 export PATH="$PATH":~/bin:~/.local/bin
-
-export WORKON_HOME="$HOME/.virtualenvs"
-export PROJECT_HOME="$HOME/workspace"
 
 # ~/ Cleanup
 export LESSHISTFILE="-"
