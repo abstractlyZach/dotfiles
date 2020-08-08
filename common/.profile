@@ -3,7 +3,7 @@
 export TERMINAL="st"
 export SHELL="zsh"
 export EDITOR="nvim"
-export FILE="ranger"
+export FILE="lf"
 export BROWSER="brave"
 
 export SUDO_ASKPASS="$HOME/bin/dmenupass"

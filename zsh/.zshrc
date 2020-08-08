@@ -112,7 +112,6 @@ SPACESHIP_PROMPT_ORDER=(
   char
 )
 
-
 # Setup fzf
 if [[ ! "$PATH" == */home/zach/workspace/fzf/bin* ]]; then
   export PATH="${PATH:+${PATH}:}/home/zach/workspace/fzf/bin"
@@ -124,3 +123,4 @@ eval "$(pyenv virtualenv-init -)"
 export PYENV_ROOT="$(pyenv root)"
 
 export PYTHONSTARTUP=~/.config/pythonrc
+export PATH="$PATH:/home/zach/.cargo/bin"
