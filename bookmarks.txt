@@ -1,0 +1,7 @@
+plangrid insights,https://github.com/plangrid/plangrid-insights
+project hub,https://github.com/plangrid/gg-project-hub
+team page,https://git.autodesk.com/plangrid/team-page
+fb messenger,https://www.messenger.com/
+spotify,https://open.spotify.com/
+jira,https://jira.autodesk.com/secure/RapidBoard.jspa?rapidView=9257
+ul wiki,https://wiki.autodesk.com/display/PLANGUIDES/User+Lifecycle+Home
