@@ -14,3 +14,5 @@ export PATH="$PATH":~/bin:~/.local/bin
 export LESSHISTFILE="-"
 export GNUPGHOME="$HOME/.config/gnupg/"
 export IPYTHONDIR="$HOME/.config/ipython"
+
+export XDG_CONFIG_HOME="$HOME/.config"
