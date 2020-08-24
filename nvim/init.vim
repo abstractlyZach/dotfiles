@@ -162,6 +162,9 @@ call plug#end()
     " Compile document, be it groff/LaTeX/markdown/etc.
     map <leader>c :w! \| !compile <c-r>%<CR>
 
+    " run current project
+    map <leader>r :!make run<CR>
+
     " Keep a banner listing the open tabs at the top
     let g:airline#extensions#tabline#enabled = 1
 
@@ -184,7 +187,6 @@ call plug#end()
     " copy current relative path to the clipboard
     map <leader>q :let @+ = expand("%")<CR>
 
-    " run nosetests on file
     map <leader>w :make quicktest<CR>
 
     " shortcut to edit this file
