@@ -188,6 +188,7 @@ call plug#end()
     map <leader>q :let @+ = expand("%")<CR>
 
     map <leader>w :make quicktest<CR>
+    map <leader>e :!pytest %<CR>
 
     " shortcut to edit this file
     map <leader>v :e ~/.config/nvim/init.vim<CR>
