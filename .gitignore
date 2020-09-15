@@ -23,6 +23,7 @@ ranger/history
 
 .zsh_history
 .zcompdump
+.zcompcache
 
 gnupg
 ipython
