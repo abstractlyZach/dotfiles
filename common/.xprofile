@@ -5,3 +5,4 @@ sxhkd &				# used for binding hotkeys
 xcompmgr &			# window transparency manager
 xrdb ~/.config/Xresources &	# use the colors/settings on startup
 remaps &			# remaps caps to esc
+xinput disable "SynPS/2 Synaptics TouchPad" & # disable the laptop trackpad
