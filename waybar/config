@@ -6,6 +6,7 @@
     "sway/workspaces": {
         "disable-scroll": true,
     "format": "{name}:{icon}",
+    // fontawesome icons
     "format-icons": {
             "1": "",
             "2": "",
