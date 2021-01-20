@@ -37,6 +37,7 @@
     background: #26354b;
     font-size: 15px;
     font-weight: bold;
+    border-radius: 50px;
 }
 
 #battery {
@@ -76,14 +77,16 @@
     animation-direction: alternate;
 }
 
-#clock
-{
-    
+#clock {
     font-size: 14px;
     background: #26354b;
-    border-radius: 0px 25px 25px 0px;
-
+    border-radius: 25px;
 }
+
+#battery {
+    border-radius: 0px 25px 25px 0px;
+}
+
 
 #network {
     border-right: none;

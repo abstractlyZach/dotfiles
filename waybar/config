@@ -2,12 +2,13 @@
     "layer": "top",
     "position": "top",
     "modules-left": ["sway/workspaces", "sway/mode"],
-    "modules-right": ["pulseaudio", "network", "battery", "clock", "custom/whitespace", "custom/power"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "network", "battery", "custom/whitespace", "custom/power"],
     "sway/workspaces": {
         "disable-scroll": true,
-    "format": "{name}:{icon}",
-    // fontawesome icons
-    "format-icons": {
+        "format": "{name}:{icon}",
+        // fontawesome icons
+        "format-icons": {
             "1": "",
             "2": "",
             "3": "",
@@ -36,7 +37,7 @@
     },
     "network": {
         "format-wifi": " {essid}",
-        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-ethernet": " {ifname}",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "󰤮 Disconnected",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
