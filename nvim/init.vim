@@ -66,6 +66,12 @@ call plug#begin('~/.config/nvim/plugged')
     " manage virtualenv for nvim's python
     Plug 'jmcantrell/vim-virtualenv'
 
+    " better python syntax highlighting
+    Plug 'vim-python/python-syntax'
+
+    " autocomplete
+    Plug 'lifepillar/vim-mucomplete'
+
 call plug#end()
 " }}}
 " }}}
