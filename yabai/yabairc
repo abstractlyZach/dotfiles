@@ -2,20 +2,9 @@
 
 # colors are in AARRGGBB format. "A" is for transparency
 
-# bar settings
-yabai -m config status_bar                   off
-yabai -m config status_bar_text_font         "Fantasque Sans Mono:Bold:12.0"
-yabai -m config status_bar_icon_font         "FontAwesome:Regular:12.0"
-yabai -m config status_bar_background_color  0xe0202020
-yabai -m config status_bar_foreground_color  0xffa8a8a8
-yabai -m config status_bar_space_icon_strip  1 2 3 4 5 6 7 8 9
-yabai -m config status_bar_power_icon_strip  🔋 ⚡
-# yabai -m config status_bar_space_icon        spaces!
-yabai -m config status_bar_clock_icon        🕒
-
 # global settings
-yabai -m config mouse_follows_focus          on
-yabai -m config focus_follows_mouse          autoraise
+yabai -m config mouse_follows_focus          off
+# yabai -m config focus_follows_mouse          autoraise
 yabai -m config window_placement             second_child
 yabai -m config window_topmost               off
 yabai -m config window_opacity               on
@@ -54,9 +43,5 @@ yabai -m rule --add app="^Google Chrome$" manage=off
 # signals
 yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
 yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
-
-# refresh spaces status bar
-# https://github.com/koekeishiya/yabai/issues/31
-yabai -m signal --add label=space_status_bar event=space_changed action="osascript -e 'tell application id \"tracesOf.Uebersicht\" to refresh widget id \"workspaces-jsx\"'"
 
 echo "yabai configuration loaded.."
