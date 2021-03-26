@@ -5,7 +5,7 @@ function cdd() {
     target_dir=$(
 	fd --type d --color=always --absolute-path . "$HOME" --exclude "Library" |
 	    sed "s,$HOME,~," |
-	    fzf --reverse --color=light |
+	    fzf |
 	    sed "s,~,$HOME,"
     ) 
     [[ -z $target_dir ]] || cd $target_dir
@@ -23,7 +23,7 @@ PLANGRID_DIR="$HOME/workspace/plangrid"
 pgpy() {
     fd --extension py  --color=always --absolute-path . "$PLANGRID_DIR" |
 	sed "s,$PLANGRID_DIR,👷," |
-	fzf --reverse | 
+	fzf | 
 	sed "s,👷,$PLANGRID_DIR," |
 	xargs --no-run-if-empty $EDITOR
 }
@@ -34,7 +34,7 @@ fx() {
     # test for empty 
     [[ -z "$1" ]] && echo "Fuzzy extension finder: need to specify an extension" && return 1 
     fd --extension "$1" --color=always --absolute-path . "$HOME" |
-	fzf --reverse |
+	fzf |
 	xargs --no-run-if-empty $EDITOR
 }
 
