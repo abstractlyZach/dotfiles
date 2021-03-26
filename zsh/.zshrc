@@ -89,19 +89,9 @@ export FZF_DEFAULT_OPTS="--ansi --reverse
 export GEM_HOME=~/.local/ruby
 export PATH="$PATH:$HOME/.local/ruby/bin"
 
-
-SPACESHIP_USER_SHOW=always
-SPACESHIP_USER_SUFFIX=""
-SPACESHIP_HOST_PREFIX="@"
-SPACESHIP_HOST_SHOW=always
-SPACESHIP_DIR_COLOR="magenta"
-SPACESHIP_PROMPT_SEPARATE_LINE=true
-SPACESHIP_VENV_PREFIX="(🐍 "
-SPACESHIP_VENV_SUFFIX=")"
-SPACESHIP_VENV_COLOR="red"
-SPACESHIP_GIT_SYMBOL="🦥 "
-SPACESHIP_GIT_BRANCH_COLOR="green"
-
+# customizing my shell prompt
+# https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
+SPACESHIP_EXIT_CODE_SHOW=true
 SPACESHIP_PROMPT_ORDER=(
   user          # Username section
   host
@@ -109,10 +99,11 @@ SPACESHIP_PROMPT_ORDER=(
   git
   node
   docker
-  venv
-  line_sep      # line break
+  pyenv
+  exec_time
   jobs
   exit_code
+  line_sep      # line break
   char
 )
 autoload -U promptinit; promptinit
