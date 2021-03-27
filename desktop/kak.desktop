@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Kakoune Text Editor
+Comment=Edit text files
+Exec=kak 
+Terminal=true
+Type=Application
+Icon=terminal
+Categories=Utility;TextEditor;
+StartupNotify=true
+MimeType=text/plain;
