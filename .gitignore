@@ -45,6 +45,7 @@ calibre
 sway/default_i3_config
 sway/default_sway_config
 spotify-tui
+broot/launcher
 
 # what do these do?? random files from manjaro
 # clean these up eventually
