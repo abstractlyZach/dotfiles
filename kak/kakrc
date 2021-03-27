@@ -19,6 +19,7 @@ plug "abstractlyZach/nord.kak" %{
     colorscheme nord
 }
 # cosmetics
+# add relative line numbers
 add-highlighter global/ number-lines -relative -hlcursor -min-digits 2
 
 plug "alexherbo2/auto-pairs.kak" %{
@@ -26,9 +27,10 @@ plug "alexherbo2/auto-pairs.kak" %{
     auto-pairs-enable 
 }
 
-# add highlighting for current line
+# highlight current line
 plug "insipx/kak-crosshairs" %{
     cursorline
+    # nord2, can't set this in the colorscheme because it's plugin-specific
     set-face global crosshairs_line default,rgb:434c5e
 }
 
@@ -88,3 +90,9 @@ plug "andreyorst/smarttab.kak" defer smarttab %{
     # these languages will use `smarttab' behavior
     #hook global WinSetOption filetype=(c|cpp) smarttab
 }
+
+plug "alexherbo2/toggle-highlighter.kak" %{
+    require-module toggle-highlighter
+    map global user w -docstring "toggle whitespace highlighter" ':toggle-highlighter window/ show-whitespaces<ret>'
+}
+
