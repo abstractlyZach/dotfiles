@@ -1,41 +1,22 @@
+kak/plugins/
+kak/colors/
 nvim/plugged
 nvim/autoload
-# not sure what this is. it keeps popping up every time I delete it.
-configstore
 # this is where I store my current wallpaper
 wall.png
-
-# stuff ubuntu keeps putting into the .config folder
-dconf/
-evolution/
-gnome-initial-setup-done
-gtk-3.0/
-ibus/
-nautilus/
-pulse/
 user-dirs.dirs
 user-dirs.locale
-BraveSoftware/
 mimeapps.list
-
-# ranger history
-ranger/history
-
 .zsh_history
 .zcompdump*
 .zcompcache
-
 gnupg
 ipython
 htop
-zoomus.conf
-
 gh
 
-kak/plugins/
-kak/colors/
-
 # These configs I don't touch and they're allowed to live on my machine
+BraveSoftware/
 Signal\ Beta
 Slack
 discord
@@ -46,6 +27,7 @@ sway/default_i3_config
 sway/default_sway_config
 spotify-tui
 broot/launcher
+zoomus.conf
 
 # what do these do?? random files from manjaro
 # clean these up eventually
@@ -55,6 +37,7 @@ Thunar/
 autostart/
 falkon
 gtk-2.0
+gtk-3.0/
 midori
 xfce4
 volumeicon
@@ -63,3 +46,6 @@ key-mapper
 nvm
 pavucontrol.ini
 qt5ct
+dconf
+configstore
+pulse/
