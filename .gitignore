@@ -22,7 +22,7 @@ mimeapps.list
 ranger/history
 
 .zsh_history
-.zcompdump
+.zcompdump*
 .zcompcache
 
 gnupg
@@ -34,3 +34,28 @@ gh
 
 kak/plugins/
 kak/colors/
+
+# These configs I don't touch and they're allowed to live on my machine
+Signal\ Beta
+Slack
+discord
+libreoffice
+lutris
+calibre
+
+# what do these do?? random files from manjaro
+# clean these up eventually
+Kvantum/
+QtProject.conf
+Thunar/
+autostart/
+falkon
+gtk-2.0
+midori
+xfce4
+volumeicon
+Mousepad
+key-mapper
+nvm
+pavucontrol.ini
+qt5ct
