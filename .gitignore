@@ -6,7 +6,6 @@ nvim/autoload
 wall.png
 user-dirs.dirs
 user-dirs.locale
-mimeapps.list
 .zsh_history
 .zcompdump*
 .zcompcache
