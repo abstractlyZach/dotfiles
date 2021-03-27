@@ -1,20 +1,25 @@
-
 # add hints for all normal mode actions
 set -add global autoinfo normal
+
+# user commands
 map global user d -docstring "fuzzy-find files" ':fzf-files<ret>' 
 map global user b -docstring "fuzzy-find buffers" ':fzf-buffers<ret>'
 map global user v -docstring "open kakrc" ':e ~/.config/kak/kakrc<ret>'
 map global user f -docstring "format current buffer" ':format<ret>'
-add-highlighter global/ number-lines -relative -hlcursor -min-digits 2
+
+# disable window title
+set global ui_options ncurses_set_title=false
 
 source "%val{config}/plugins/plug.kak/rc/plug.kak"
 
 plug "robertmeta/plug.kak" noload
 plug "alexherbo2/prelude.kak"
 
-plug "nesyamun/nord-kakoune" %{
+plug "abstractlyZach/nord.kak" %{
     colorscheme nord
 }
+# cosmetics
+add-highlighter global/ number-lines -relative -hlcursor -min-digits 2
 
 plug "alexherbo2/auto-pairs.kak" %{
     require-module auto-pairs
@@ -37,6 +42,7 @@ hook global ModuleLoaded x11 %{
 plug "andreyorst/powerline.kak" defer powerline %{
     #Configure powerline.kak as desired
     powerline-theme solarized-dark-termcolors
+    powerline-separator triangle
 } config %{
     powerline-start
 }
@@ -53,7 +59,14 @@ plug "kak-lsp/kak-lsp" do %{
         # set-option window lsp_auto_highlight_references true
         # set-option window lsp_hover_anchor false
         lsp-auto-hover-enable
-        echo -debug "Enabling LSP for filtetype %opt{filetype}"
+        echo -debug "Enabling LSP for filetype %opt{filetype}"
+        lsp-enable-window
+    }
+    hook global WinSetOption filetype=(typescript) %{
+        # set-option window lsp_auto_highlight_references true
+        # set-option window lsp_hover_anchor false
+        lsp-auto-hover-enable
+        echo -debug "Enabling LSP for filetype %opt{filetype}"
         lsp-enable-window
     }
 }
@@ -69,9 +82,9 @@ plug "andreyorst/smarttab.kak" defer smarttab %{
     set-option global softtabstop 4
 } config %{
     # these languages will use `expandtab' behavior
-    hook global WinSetOption filetype=(markdown|kak|sh|python) expandtab
+    hook global WinSetOption filetype=.* expandtab
     # these languages will use `noexpandtab' behavior
-    # hook global WinSetOption filetype=(makefile|gas) noexpandtab
+    #hook global WinSetOption filetype=(makefile|gas) noexpandtab
     # these languages will use `smarttab' behavior
-    # hook global WinSetOption filetype=(c|cpp) smarttab
+    #hook global WinSetOption filetype=(c|cpp) smarttab
 }
