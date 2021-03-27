@@ -124,3 +124,15 @@ export PATH="$PATH:/home/zach/.cargo/bin"
 
 # use virtualenv in cli prompt when using pyenv virtualenv
 export PYENV_VIRTUALENV_DISABLE_PROMPT=0
+
+# nvm
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# lazy load nvm
+# https://blog.mattclemente.com/2020/06/26/oh-my-zsh-slow-to-load.html
+# http://broken-by.me/lazy-load-nvm/
+nvm() {
+  unset -f nvm
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use # This loads nvm
+  nvm $@
+}
