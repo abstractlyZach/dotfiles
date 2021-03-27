@@ -2,7 +2,7 @@
 # Profile file. Runs on login. 
 export TERMINAL="st"
 export SHELL="zsh"
-export EDITOR="nvim"
+export EDITOR="kak"
 export FILE="lf"
 export BROWSER="brave"
 
