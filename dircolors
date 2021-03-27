@@ -1,0 +1,3 @@
+# colors for ls
+
+ORPHAN 40;31;01 # symlink to nonexistent file
