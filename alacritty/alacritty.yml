@@ -746,12 +746,15 @@ key_bindings:
   # using kakoune on mac
   # remap command to alt key for a lot of combos
   # https://github.com/alacritty/alacritty/issues/62#issuecomment-333441337
-  - { key: I,        mods: Command, chars: "\x1bi" }
   - { key: A,        mods: Command, chars: "\x1ba" }
-  - { key: S,        mods: Command, chars: "\x1bs" }
+  - { key: I,        mods: Command, chars: "\x1bi" }
   - { key: K,        mods: Command, chars: "\x1bk" }
   - { key: K,        mods: Command|Shift, chars: "\x1bK" }
+  - { key: N,        mods: Command, chars: "\x1bn" }
+  - { key: S,        mods: Command, chars: "\x1bs" }
   - { key: W,        mods: Command, chars: "\x1bw" }
+  - { key: Slash,        mods: Command, chars: "\x1b/" }
+  - { key: Semicolon,        mods: Command, chars: "\x1b;" }
 
 #debug:
   # Display the time it takes to redraw each frame.
