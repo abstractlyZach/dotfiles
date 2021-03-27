@@ -34,9 +34,10 @@ yabai -m config window_gap                   7
 # yabai -m config --space 7 layout             float
 
 # window rules
+yabai -m rule --add app=Spotify space=1
 yabai -m rule --add app="Microsoft Outlook" space=2
 yabai -m rule --add app=Slack space=3
-yabai -m rule --add app=Spotify space=1
+yabai -m rule --add app="Zoom*" space=4
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^Google Chrome$" manage=off
 
