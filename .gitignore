@@ -11,7 +11,6 @@ user-dirs.locale
 .zcompcache
 gnupg
 ipython
-htop
 gh
 
 # These configs I don't touch and they're allowed to live on my machine
