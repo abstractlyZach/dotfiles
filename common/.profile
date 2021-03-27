@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
-# Profile file. Runs on login. 
-export TERMINAL="st"
+# Profile file. Runs on login.
+
+# open terminal using a certain command
+export TERMINAL="alacritty -e"
 export SHELL="zsh"
 export EDITOR="kak"
 export FILE="lf"
