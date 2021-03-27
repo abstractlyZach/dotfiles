@@ -19,12 +19,12 @@
 
 #workspaces button {
     padding: 5 6px;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #3b4252;
+    color: #d8dee9;
 }
 
 #workspaces button.focused {
-    border-bottom: 3px solid #ffffff;
+    background-color: #2e3440;
 }
 
 #clock, #battery, #cpu, #memory, #network, #tray, #mode {
