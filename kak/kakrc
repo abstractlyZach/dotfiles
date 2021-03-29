@@ -63,7 +63,7 @@ plug "kak-lsp/kak-lsp" do %{
         echo -debug "Enabling LSP for filetype %opt{filetype}"
         lsp-enable-window
     }
-    hook global WinSetOption filetype=(typescript) %{
+    hook global WinSetOption filetype=(typescript|javascript) %{
         # set-option window lsp_auto_highlight_references true
         # set-option window lsp_hover_anchor false
         lsp-auto-hover-enable
