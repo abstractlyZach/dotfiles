@@ -7,6 +7,7 @@ map global user b -docstring "fuzzy-find buffers" ':+ kcr-fzf-buffers<ret>'
 map global user v -docstring "open kakrc" ':e ~/.config/kak/kakrc<ret>'
 map global user f -docstring "format current buffer" ':format<ret>'
 map global user s -docstring "open selection in broswer" '<a-|>xargs $BROWSER<ret>'
+map global user g -docstring "open lazygit " ':+ lazygit<ret>'
 
 # disable window title
 set global ui_options ncurses_set_title=false
