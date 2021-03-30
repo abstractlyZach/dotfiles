@@ -8,16 +8,16 @@
     theme:
       lightTheme: false # For terminals with a light background
       activeBorderColor:
-        - white
+        - cyan
         - bold
       inactiveBorderColor:
-        - green
+        - white
       optionsTextColor:
         - blue
       selectedLineBgColor:
         - default
       selectedRangeBgColor:
-        - blue
+        - reverse
     commitLength:
       show: true
     mouseEvents: true
