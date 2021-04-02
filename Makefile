@@ -6,6 +6,9 @@ all:
 osx:
 	make basics
 	stow --verbose=2 skhd
+	# kak-lsp config lives in a different directory on OSX
+	mkdir -p "${HOME}/Library/Preferences/kak-lsp"
+	stow --verbose=2 kak-lsp --target="${HOME}/Library/Preferences/kak-lsp"
 
 basics:
 	rm nvim/autoload/plug.vim || true
