@@ -12,8 +12,8 @@ user-dirs.locale
 gnupg
 ipython
 gh
-lazygit/.config/
-lazygit/state.yml
+lazygit
+!lazygit/config.yml
    
 # These configs I don't touch and they're allowed to live on my machine
 BraveSoftware/
