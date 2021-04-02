@@ -748,6 +748,7 @@ key_bindings:
   # https://github.com/alacritty/alacritty/issues/62#issuecomment-333441337
   - { key: A,        mods: Command, chars: "\x1ba" }
   - { key: I,        mods: Command, chars: "\x1bi" }
+  - { key: J,        mods: Command, chars: "\x1bJ" }
   - { key: K,        mods: Command, chars: "\x1bk" }
   - { key: K,        mods: Command|Shift, chars: "\x1bK" }
   - { key: N,        mods: Command, chars: "\x1bn" }
