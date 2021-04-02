@@ -4,6 +4,7 @@
 function cdd() {
     target_dir=$(
 	fd --type d --color=always --absolute-path . "$HOME" --exclude "Library" |
+            cat - <(echo "$HOME/.config") | 
 	    sed "s,$HOME,~," |
 	    fzf |
 	    sed "s,~,$HOME,"
