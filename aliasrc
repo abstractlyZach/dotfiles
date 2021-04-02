@@ -15,3 +15,4 @@ alias gd="git difftool"
 alias vr="$EDITOR -R"
 alias slock='slock -m "$(cowsay "$(fortune)")"'
 alias br="broot"
+alias lg="lazygit"
