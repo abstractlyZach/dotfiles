@@ -18,3 +18,6 @@ export GNUPGHOME="$HOME/.config/gnupg/"
 export IPYTHONDIR="$HOME/.config/ipython"
 
 export XDG_CONFIG_HOME="$HOME/.config"
+
+[ $(uname) = 'Darwin' ] && export CLIPBOARD="pbcopy"
+[ $(uname) = 'Linux' ] && export CLIPBOARD="wl-copy"
