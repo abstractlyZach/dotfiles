@@ -102,6 +102,8 @@ if [[ ! "$PATH" == */home/zach/workspace/fzf/bin* ]]; then
   export PATH="${PATH:+${PATH}:}/home/zach/workspace/fzf/bin"
 fi
 
+test -r "${XDG_CONFIG_HOME}/dir_colors" && eval $(dircolors "${XDG_CONFIG_HOME}/dir_colors")
+
 # initialize pyenv with shims and autocompletion
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
