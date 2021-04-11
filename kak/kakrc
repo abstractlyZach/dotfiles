@@ -10,6 +10,8 @@ map global user a -docstring "open selection in broswer" '<a-|>xargs $BROWSER<re
 map global user s -docstring "search repo" ':+ kcr-fzf-grep<ret>'
 map global user g -docstring "open lazygit " ':+ lazygit<ret>'
 map global user l -docstring "get github permalink" ':$ github-permalink<ret>'
+map global user h -docstring "lsp hover" ':lsp-hover<ret>'
+
 
 # disable window title
 set global ui_options ncurses_set_title=false
@@ -60,14 +62,12 @@ plug "kak-lsp/kak-lsp" do %{
     hook global WinSetOption filetype=(python) %{
         # set-option window lsp_auto_highlight_references true
         # set-option window lsp_hover_anchor false
-        lsp-auto-hover-enable
         echo -debug "Enabling LSP for filetype %opt{filetype}"
         lsp-enable-window
     }
     hook global WinSetOption filetype=(typescript|javascript) %{
         # set-option window lsp_auto_highlight_references true
         # set-option window lsp_hover_anchor false
-        lsp-auto-hover-enable
         echo -debug "Enabling LSP for filetype %opt{filetype}"
         lsp-enable-window
     }
