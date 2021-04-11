@@ -280,3 +280,8 @@ workspace 10 output LVDS-1
 # assign these windows to specific workspaces
 for_window [title="^Slack.*$"] move container to workspace 3
 for_window [title="^Signal Beta$"] move container to workspace 6
+
+
+# rename workspaces based on what's running
+# https://github.com/pierrechevalier83/workstyle
+exec_always --no-startup-id workstyle &> /tmp/workstyle.log
