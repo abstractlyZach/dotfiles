@@ -113,7 +113,6 @@ eval "$(pyenv virtualenv-init -)"
 export PYENV_ROOT="$(pyenv root)"
 
 export PYTHONSTARTUP=~/.config/pythonrc
-export PATH="$PATH:/home/zach/.cargo/bin"
 
 # use virtualenv in cli prompt when using pyenv virtualenv
 export PYENV_VIRTUALENV_DISABLE_PROMPT=0
