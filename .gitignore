@@ -12,6 +12,9 @@ user-dirs.locale
 gnupg
 ipython
 gh
+krabby
+chromium
+google-chrome
 lazygit
 !lazygit/config.yml
    
