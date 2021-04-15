@@ -1,7 +1,3 @@
-# Enable colors and change prompt:
-autoload -U colors && colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
@@ -80,26 +76,6 @@ export FZF_DEFAULT_OPTS="--ansi --reverse \
 export GEM_HOME=~/.local/ruby
 export PATH="$PATH:$HOME/.local/ruby/bin"
 
-# customizing my shell prompt
-# https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
-SPACESHIP_EXIT_CODE_SHOW=true
-SPACESHIP_PROMPT_ORDER=(
-  user          # Username section
-  host
-  dir           # Current directory section
-  git
-  node
-  docker
-  pyenv
-  exec_time
-  jobs
-  exit_code
-  line_sep      # line break
-  char
-)
-autoload -U promptinit; promptinit
-prompt spaceship
-
 # Setup fzf
 if [[ ! "$PATH" == */home/zach/workspace/fzf/bin* ]]; then
   export PATH="${PATH:+${PATH}:}/home/zach/workspace/fzf/bin"
@@ -128,3 +104,7 @@ nvm() {
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use # This loads nvm
   nvm $@
 }
+
+# use starship for our prompt
+export STARSHIP_CONFIG="${XDG_CONFIG_HOME}/starship/config.toml"
+eval "$(starship init zsh)"

@@ -1,0 +1,7 @@
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                           
+success_symbol = "[➜](bold green)"
+
+[python]
+pyenv_version_name = true
+pyenv_prefix = ""
