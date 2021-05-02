@@ -22,5 +22,8 @@ export IPYTHONDIR="$HOME/.config/ipython"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
+# screenshot directory
+export GRIM_DEFAULT_DIR="${HOME}/screenshots"
+
 [ $(uname) = 'Darwin' ] && export CLIPBOARD="pbcopy"
 [ $(uname) = 'Linux' ] && export CLIPBOARD="wl-copy"
