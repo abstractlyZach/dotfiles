@@ -285,3 +285,6 @@ for_window [title="^Signal Beta$"] move container to workspace 6
 # rename workspaces based on what's running
 # https://github.com/pierrechevalier83/workstyle
 exec_always --no-startup-id workstyle &> /tmp/workstyle.log
+
+# automatically tile windows evenly
+exec autotiling
