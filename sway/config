@@ -288,3 +288,10 @@ exec_always --no-startup-id workstyle &> /tmp/workstyle.log
 
 # automatically tile windows evenly
 exec autotiling
+
+# clamshell mode
+# https://github.com/swaywm/sway/wiki#clamshell-mode
+set $laptop LVDS-1
+bindswitch --reload --locked lid:on output $laptop disable
+bindswitch --reload --locked lid:off output $laptop enable
+exec_always /home/zach/bin/clamshell_mode
