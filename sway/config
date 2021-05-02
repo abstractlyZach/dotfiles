@@ -296,3 +296,6 @@ set $laptop LVDS-1
 bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
 exec_always /home/zach/bin/clamshell_mode
+
+# notifications
+exec mako
