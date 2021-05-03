@@ -754,6 +754,9 @@ key_bindings:
   - { key: N,        mods: Command, chars: "\x1bn" }
   - { key: S,        mods: Command, chars: "\x1bs" }
   - { key: W,        mods: Command, chars: "\x1bw" }
+  - { key: B,        mods: Command, chars: "\x1bb" }
+  - { key: W,        mods: Command|Shift, chars: "\x1bW" }
+  - { key: B,        mods: Command|Shift, chars: "\x1bB" }
   - { key: Slash,        mods: Command, chars: "\x1b/" }
   - { key: Semicolon,        mods: Command, chars: "\x1b;" }
 
