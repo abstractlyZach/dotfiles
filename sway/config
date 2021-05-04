@@ -159,7 +159,7 @@ input "1:1:AT_Translated_Set_2_keyboard" xkb_options caps:escape
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
+    # bindsym $mod+s layout stacking
     bindsym $mod+t layout tabbed
     bindsym $mod+e layout toggle split
 
