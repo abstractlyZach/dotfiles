@@ -74,6 +74,9 @@ input "1:1:AT_Translated_Set_2_keyboard" xkb_options caps:escape
     # Start a terminal
     bindsym $mod+Return exec $term
 
+    # screenshots
+    bindsym $mod+s exec screenshot
+
     # Open a web browser
     bindsym $mod+w exec $BROWSER
 
