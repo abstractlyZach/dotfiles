@@ -303,3 +303,7 @@ exec_always /home/zach/bin/clamshell_mode
 
 # notifications
 exec mako
+
+# mouse cursor
+# https://wiki.archlinux.org/title/Sway#Change_cursor_theme_and_size
+seat seat0 xcursor_theme Bibata-Modern-Classic 24
