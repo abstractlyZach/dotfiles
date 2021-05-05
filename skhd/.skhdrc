@@ -39,6 +39,9 @@ alt - x : yabai -m window --toggle float;\
 alt - v : yabai -m window --toggle float;\
           yabai -m window --grid 1:4:3:1:1:1
 
+# jump to most recent space
+alt - tab : yabai -m space --focus recent
+
 # send window to space
 shift + alt - 1 : yabai -m window --space 1
 shift + alt - 2 : yabai -m window --space 2
