@@ -4,8 +4,6 @@ nvim/plugged
 nvim/autoload
 # this is where I store my current wallpaper
 wall.png
-user-dirs.dirs
-user-dirs.locale
 .zsh_history
 .zcompdump*
 .zcompcache

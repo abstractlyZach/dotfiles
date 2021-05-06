@@ -76,6 +76,7 @@ input "1:1:AT_Translated_Set_2_keyboard" xkb_options caps:escape
 
     # screenshots
     bindsym $mod+s exec screenshot
+    bindsym $mod+Shift+s exec grim -c 
 
     # Open a web browser
     bindsym $mod+w exec $BROWSER
@@ -302,3 +303,7 @@ exec_always /home/zach/bin/clamshell_mode
 
 # notifications
 exec mako
+
+# mouse cursor
+# https://wiki.archlinux.org/title/Sway#Change_cursor_theme_and_size
+seat seat0 xcursor_theme Bibata-Modern-Classic 24
