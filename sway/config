@@ -268,17 +268,17 @@ font pango:SourceCodePro, FontAwesome 11
 
 # displays
 output LVDS-1 pos 0 250
-output VGA-1 pos 1600 0
+output DP-1 pos 1600 0
 
 # bind workspaces to displays
-workspace 1 output VGA-1
-workspace 2 output VGA-1
-workspace 3 output VGA-1
-workspace 4 output VGA-1
-workspace 5 output VGA-1
-workspace 6 output VGA-1
-workspace 7 output VGA-1
-workspace 8 output VGA-1
+workspace 1 output DP-1
+workspace 2 output DP-1
+workspace 3 output DP-1
+workspace 4 output DP-1
+workspace 5 output DP-1
+workspace 6 output DP-1
+workspace 7 output DP-1
+workspace 8 output DP-1
 workspace 9 output LVDS-1
 workspace 10 output LVDS-1
 
