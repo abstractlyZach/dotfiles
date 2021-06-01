@@ -1,0 +1,33 @@
+[magic-tiler-ide]
+split = "horizontal"
+
+
+[[magic-tiler-ide.children]]
+split="vertical"
+size=67
+
+[[magic-tiler-ide.children.children]]
+size = 80
+split = "horizontal"
+
+
+[[magic-tiler-ide.children.children.children]]
+command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'kak src/magic_tiler/magic_tiler.py'"
+size = 33
+mark = "left-editor"
+
+[[magic-tiler-ide.children.children.children]]
+command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'kak README.md'"
+size = 33
+mark = "right-editor"
+
+[[magic-tiler-ide.children.children]]
+command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'neofetch; zsh'"
+size = 20
+mark = "gutter"
+
+
+[[magic-tiler-ide.children]]
+command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'fd | entr make'"
+size = 33
+mark = "tests"
