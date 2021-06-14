@@ -1,15 +1,27 @@
 [magic-tiler-ide]
 split = "horizontal"
 
+[[magic-tiler-ide.children]]
+split="vertical"
+size = 20
+
+[[magic-tiler-ide.children.children]]
+command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'fd | entr sh -c \"make format && make lint\"'"
+size = 50
+mark = "formatting"
+
+[[magic-tiler-ide.children.children]]
+command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'fd | entr make typecheck'"
+size = 50
+mark = "typechecking"
 
 [[magic-tiler-ide.children]]
 split="vertical"
-size=67
+size = 47
 
 [[magic-tiler-ide.children.children]]
 size = 80
 split = "horizontal"
-
 
 [[magic-tiler-ide.children.children.children]]
 command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'kak src/magic_tiler/magic_tiler.py'"
@@ -28,6 +40,6 @@ mark = "gutter"
 
 
 [[magic-tiler-ide.children]]
-command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'fd | entr make'"
+command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'fd | entr make test'"
 size = 33
 mark = "tests"
