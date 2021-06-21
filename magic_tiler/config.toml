@@ -1,45 +1,43 @@
 [magic-tiler-ide]
 split = "horizontal"
+children = ['linters', 'main', 'tests']
+sizes = [20, 47, 33]
 
-[[magic-tiler-ide.children]]
+[linters]
 split="vertical"
-size = 20
+sizes = [50, 50]
+children = ['formatting', 'typechecking']
 
-[[magic-tiler-ide.children.children]]
-command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'fd | entr sh -c \"make format && make lint\"'"
-size = 50
-mark = "formatting"
-
-[[magic-tiler-ide.children.children]]
-command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'fd | entr make typecheck'"
-size = 50
-mark = "typechecking"
-
-[[magic-tiler-ide.children]]
+[main]
 split="vertical"
-size = 47
+children = ['editors', 'gutter']
+sizes = [80, 20]
 
-[[magic-tiler-ide.children.children]]
-size = 80
+[editors]
+sizes = [50, 50]
+children = ['left-editor', 'right-editor']
 split = "horizontal"
 
-[[magic-tiler-ide.children.children.children]]
+[formatting]
+command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'fd | entr sh -c \"make format && make lint\"; zsh'"
+mark = "formatting"
+
+[typechecking]
+command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'fd | entr make typecheck'; zsh"
+mark = "typechecking"
+
+[left-editor]
 command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'kak src/magic_tiler/magic_tiler.py'"
-size = 33
 mark = "left-editor"
 
-[[magic-tiler-ide.children.children.children]]
+[right-editor]
 command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'kak README.md'"
-size = 33
 mark = "right-editor"
 
-[[magic-tiler-ide.children.children]]
+[gutter]
 command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'neofetch; zsh'"
-size = 20
 mark = "gutter"
 
-
-[[magic-tiler-ide.children]]
-command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'fd | entr make test'"
-size = 33
+[tests]
+command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'fd | entr make test'; zsh"
 mark = "tests"
