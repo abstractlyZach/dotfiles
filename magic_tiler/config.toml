@@ -19,7 +19,7 @@ children = ['left-editor', 'right-editor']
 split = "horizontal"
 
 [formatting]
-command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'fd | entr sh -c \"make format && make lint\"; zsh'"
+command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'fd | entr sh -c \"echo && make format && make lint && echo_success\"; zsh'"
 mark = "formatting"
 
 [typechecking]
