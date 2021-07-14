@@ -176,3 +176,9 @@ keybinding:
     init: 'i'
     update: 'u'
     bulkMenu: 'b'
+customCommands:
+  - key: "<c-r>"
+    command: "gh pr create"
+    context: "global"
+    loadingText: "Creating pull request on GitHub"
+    subprocess: true
