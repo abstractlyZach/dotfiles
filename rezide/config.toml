@@ -1,16 +1,16 @@
-[magic-tiler-ide]
+[rezide-ide]
 is_layout = true
 split = "horizontal"
 children = ['linters', 'main', 'tests']
 sizes = [20, 47, 33]
 
 [linters]
-split="vertical"
+split = "vertical"
 sizes = [50, 50]
 children = ['formatting', 'typechecking']
 
 [main]
-split="vertical"
+split = "vertical"
 children = ['editors', 'gutter']
 sizes = [80, 20]
 
@@ -18,6 +18,32 @@ sizes = [80, 20]
 sizes = [50, 50]
 children = ['left-editor', 'right-editor']
 split = "horizontal"
+
+[formatting]
+command = "alacritty --working-directory ~/workspace/abstractlyZach/reZIDE/ -e sh -c 'fd | entr sh -c \"echo && make format && make lint && echo_success\"; zsh'"
+mark = "formatting"
+
+[typechecking]
+command = "alacritty --working-directory ~/workspace/abstractlyZach/reZIDE/ -e sh -c 'fd | entr make typecheck; zsh'"
+mark = "typechecking"
+
+[left-editor]
+command = "alacritty --working-directory ~/workspace/abstractlyZach/reZIDE/ -e sh -c 'kak src/rezide/rezide.py'"
+mark = "left-editor"
+
+[right-editor]
+command = "alacritty --working-directory ~/workspace/abstractlyZach/reZIDE/ -e sh -c 'kak README.md'"
+mark = "right-editor"
+
+[gutter]
+command = "alacritty --working-directory ~/workspace/abstractlyZach/reZIDE/ -e sh -c 'neofetch; zsh'"
+mark = "gutter"
+
+[tests]
+command = "alacritty --working-directory ~/workspace/abstractlyZach/reZIDE/ -e sh -c 'fd | entr make test; zsh'"
+mark = "tests"
+
+####
 
 [python]
 is_layout = true
@@ -31,39 +57,37 @@ sizes = [70, 30]
 children = ['python-editor', 'python-gutter']
 split = 'vertical'
 
-
-[formatting]
-command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'fd | entr sh -c \"echo && make format && make lint && echo_success\"; zsh'"
-mark = "formatting"
-
-[typechecking]
-command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'fd | entr make typecheck; zsh'"
-mark = "typechecking"
-
-[left-editor]
-command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'kak src/magic_tiler/magic_tiler.py'"
-mark = "left-editor"
-
-[right-editor]
-command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'kak README.md'"
-mark = "right-editor"
-
-[gutter]
-command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'neofetch; zsh'"
-mark = "gutter"
-
-[tests]
-command = "alacritty --working-directory ~/workspace/abstractlyZach/magic-tiler/ -e sh -c 'fd | entr make test; zsh'"
-mark = "tests"
-
 [documentation]
 command = "brave --new-window https://docs.python.org/3/"
 mark = 'documentation'
 
+[python-gutter]
+command = "alacritty --working-directory ~/workspace/python-ide/ -e sh -c 'cat python.logo.colored.asciiart; zsh'"
+mark = 'python-gutter'
+
+
 [python-editor]
-command = "alacritty --working-directory ~/workspace/ -e sh -c 'kak temp.py'; zsh"
+command = "alacritty --working-directory ~/workspace/python-ide/ -e sh -c 'cp script_template.py script.py; kak script.py'; zsh"
 mark = 'python-editor'
 
-[python-gutter]
-command = "alacritty --working-directory ~/workspace/ -e zsh"
-mark = 'python-gutter'
+
+####
+
+
+[rezide-documentation]
+is_layout = true
+sizes = [20, 40, 40]
+children = ['autocompiler', 'plaintext', 'rendered-pdf']
+split = "horizontal"
+
+[autocompiler]
+command = "alacritty --working-directory ~/workspace/abstractlyZach/reZIDE/ -e sh -c 'echo README.md | entr sh -c \"echo compiling... && pandoc --pdf-engine=xelatex README.md -o README.pdf\" '"
+mark = 'autocompiler'
+
+[plaintext]
+command = "alacritty --working-directory ~/workspace/abstractlyZach/reZIDE/ -e sh -c 'kak README.md'"
+mark = 'plaintext'
+
+[rendered-pdf]
+command = "sleep 3 && zathura ~/workspace/abstractlyZach/reZIDE/README.pdf"
+mark = 'rendered-pdf'
