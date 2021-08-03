@@ -99,3 +99,10 @@ GIMP/2.10/tool-options/gimp-vector-tool
 GIMP/2.10/tool-options/gimp-warp-tool
 GIMP/2.10/tool-options/gimp-zoom-tool
 GIMP/2.10/action-history
+
+# reaper DAW
+REAPER/ColorThemes/Default_5.0.ReaperThemeZip
+REAPER/ColorThemes/Default_6.0.ReaperThemeZip
+REAPER/Data/*
+REAPER/Effects/*
+REAPER/Scripts/*
