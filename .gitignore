@@ -106,3 +106,8 @@ REAPER/ColorThemes/Default_6.0.ReaperThemeZip
 REAPER/Data/*
 REAPER/Effects/*
 REAPER/Scripts/*
+
+# Open Broadcast Studio
+obs-studio/logs/*
+obs-studio/profiler_data/*
+
