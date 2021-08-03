@@ -24,7 +24,7 @@ set $menu dmenu_run | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/zach/Pictures/nord_mountains.jpg fill
+output * bg /home/zach/pictures/nord_mountains.jpg fill
 
 #
 # Example configuration:
@@ -86,6 +86,10 @@ input "1:1:AT_Translated_Set_2_keyboard" xkb_options caps:escape
 
     # Kill focused window
     bindsym $mod+Shift+q kill
+
+    # open IDE
+    bindsym $mod+i exec fzf_rzd_local
+    bindsym $mod+Shift+i exec fzf_rzd
 
     # Start your launcher
     # bindsym $mod+d exec $menu
@@ -248,6 +252,7 @@ set $launcher dmenu_path | fzf --reverse | xargs swaymsg exec
 bindsym $mod+d exec alacritty --title '!launcher' -e sh -c \'$launcher\'
 # float any windows whose titles start with !
 for_window [title="^!.*$"] floating enable, border pixel 5
+for_window [title="^!launcher$"] resize set 400 400
 
 # all windows have no title bars and have a border x pixels thick
 for_window [title="^.*$"] border pixel 3
@@ -294,8 +299,8 @@ for_window [title="^Signal Beta$"] move container to workspace 6
 # https://github.com/pierrechevalier83/workstyle
 exec_always --no-startup-id workstyle &> /tmp/workstyle.log
 
-# automatically tile windows evenly
-exec autotiling
+# automatically tile windows evenly on these workspaces
+exec autotiling --workspaces 1 2 3 4 5 6 7
 
 # clamshell mode
 # https://github.com/swaywm/sway/wiki#clamshell-mode
