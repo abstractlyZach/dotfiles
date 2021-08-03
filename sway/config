@@ -76,7 +76,10 @@ input "1:1:AT_Translated_Set_2_keyboard" xkb_options caps:escape
 
     # screenshots
     bindsym $mod+s exec screenshot
-    bindsym $mod+Shift+s exec grim -c 
+    bindsym $mod+Shift+s exec grim -c
+
+    # fuzzy-find an emoji
+    bindsym $mod+grave exec fzf_emoji
 
     # Open a web browser
     bindsym $mod+w exec $BROWSER
