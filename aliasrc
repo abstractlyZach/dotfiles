@@ -16,3 +16,5 @@ alias vr="$EDITOR -R"
 alias slock='slock -m "$(cowsay "$(fortune)")"'
 alias br="broot"
 alias lg="lazygit"
+# make the slurp cursor more visible
+alias slurp="slurp -b #ECEFF47A -c #88C0D0"
