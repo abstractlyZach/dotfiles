@@ -2,14 +2,14 @@
 set -add global autoinfo normal
 
 # user commands
-map global user d -docstring "fuzzy-find files" ':+ kak-fzf-files<ret>' 
-map global user b -docstring "fuzzy-find buffers" ':+ kcr-fzf-buffers<ret>'
+map global user d -docstring "fuzzy-find files" ':connect run kak-fzf-files<ret>' 
+map global user b -docstring "fuzzy-find buffers" ':connect run kcr-fzf-buffers<ret>'
 map global user v -docstring "open kakrc" ':e ~/.config/kak/kakrc<ret>'
 map global user f -docstring "format current buffer" ':format<ret>'
 map global user a -docstring "open selection in broswer" '<a-|>xargs $BROWSER<ret>'
-map global user s -docstring "search repo" ':+ kcr-fzf-grep<ret>'
-map global user g -docstring "open lazygit " ':+ lazygit<ret>'
-map global user l -docstring "get github permalink" ':$ github-permalink<ret>'
+map global user s -docstring "search repo" ':connect run kcr-fzf-grep<ret>'
+map global user g -docstring "open lazygit " ':connect run lazygit<ret>'
+map global user l -docstring "get github permalink" ':connect run github-permalink<ret>'
 map global user h -docstring "lsp hover" ':lsp-hover<ret>'
 
 
@@ -96,3 +96,6 @@ plug "alexherbo2/toggle-highlighter.kak" %{
     map global user w -docstring "toggle whitespace highlighter" ':toggle-highlighter window/ show-whitespaces<ret>'
 }
 
+evaluate-commands %sh{
+    kcr init kakoune
+}
