@@ -19,7 +19,6 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_run | xargs swaymsg exec --
 
 ### Output configuration
 #
@@ -90,9 +89,6 @@ input "1:1:AT_Translated_Set_2_keyboard" xkb_options caps:escape
     # open IDE
     bindsym $mod+i exec fzf_rzd_local
     bindsym $mod+Shift+i exec fzf_rzd
-
-    # Start your launcher
-    # bindsym $mod+d exec $menu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -247,9 +243,9 @@ include /etc/sway/config.d/*
 gaps inner 5
 gaps outer 5
 
-# testing fzf for launcher
-set $launcher dmenu_path | fzf --reverse | xargs swaymsg exec
-bindsym $mod+d exec alacritty --title '!launcher' -e sh -c \'$launcher\'
+# use fzf for launcher
+set $launcher list_executables | fzf --reverse | xargs swaymsg exec
+bindsym $mod+d exec alacritty --title '!launcher' -e zsh -c \'$launcher\'
 # float any windows whose titles start with !
 for_window [title="^!.*$"] floating enable, border pixel 5
 for_window [title="^!launcher$"] resize set 400 400
