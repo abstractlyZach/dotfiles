@@ -23,7 +23,7 @@ set $term alacritty
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/zach/pictures/nord_mountains.jpg fill
+# output * bg /home/zach/pictures/nord_mountains.jpg fill
 
 #
 # Example configuration:
@@ -246,6 +246,10 @@ gaps outer 5
 # use fzf for launcher
 set $launcher list_executables | fzf --reverse | xargs swaymsg exec
 bindsym $mod+d exec alacritty --title '!launcher' -e zsh -c \'$launcher\'
+
+# fallback in case alacritty or fzf fail
+bindsym $mod+Shift+d exec dmenu_path | dmenu | xargs swaymsg exec --
+
 # float any windows whose titles start with !
 for_window [title="^!.*$"] floating enable, border pixel 5
 for_window [title="^!launcher$"] resize set 400 400
