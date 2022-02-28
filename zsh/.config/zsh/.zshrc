@@ -73,10 +73,12 @@ fi
 
 test -r "${XDG_CONFIG_HOME}/dir_colors" && eval $(dircolors "${XDG_CONFIG_HOME}/dir_colors")
 
-# initialize pyenv with shims and autocompletion
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-export PYENV_ROOT="$(pyenv root)"
+if [[ -x pyenv ]]; then
+    # initialize pyenv with shims and autocompletion
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+    export PYENV_ROOT="$(pyenv root)"
+fi
 
 export PYTHONSTARTUP=~/.config/pythonrc
 
