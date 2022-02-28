@@ -23,7 +23,7 @@ set $term alacritty
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-# output * bg /home/zach/pictures/nord_mountains.jpg fill
+output * bg /home/leezach/.config/minimalist_nord_wallpaper.jpg fill
 
 #
 # Example configuration:
@@ -258,11 +258,22 @@ for_window [title="^!launcher$"] resize set 400 400
 for_window [title="^.*$"] border pixel 3
 
 # volume control
-bindsym XF86AudioRaiseVolume exec "pamixer --allow-boost --increase 3"
-bindsym XF86AudioLowerVolume exec "pamixer --allow-boost --decrease 3"
-bindsym XF86AudioMute exec "pamixer --toggle-mute"
-bindsym XF86MonBrightnessDown exec "light -U 3"
-bindsym XF86MonBrightnessUp exec "light -A 3"
+# bindsym XF86AudioRaiseVolume exec "pamixer --allow-boost --increase 3"
+# bindsym XF86AudioLowerVolume exec "pamixer --allow-boost --decrease 3"
+# bindsym XF86AudioMute exec "pamixer --toggle-mute"
+# bindsym XF86MonBrightnessDown exec "light -U 3"
+# bindsym XF86MonBrightnessUp exec "light -A 3"
+
+# media/brightness buttons
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
 
 ## Window decoration
 # class                 border  backgr. text    indicator child_border
