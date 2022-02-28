@@ -2,11 +2,11 @@
 # Profile file. Runs on login.
 
 # open terminal using a certain command
-export TERMINAL="alacritty -e"
+export TERMINAL="foot"
 export SHELL="zsh"
 export EDITOR="kak"
 export FILE="lf"
-export BROWSER="brave"
+export BROWSER="google-chrome-stable"
 
 export SUDO_ASKPASS="$HOME/bin/dmenupass"
 
@@ -14,6 +14,7 @@ export SUDO_ASKPASS="$HOME/bin/dmenupass"
 # my bin comes first
 export PATH="$HOME/bin:$PATH"
 export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/go/bin"
 
 # ~/ Cleanup
 export LESSHISTFILE="-"
