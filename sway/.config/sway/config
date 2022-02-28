@@ -80,6 +80,9 @@ input "1:1:AT_Translated_Set_2_keyboard" xkb_options caps:escape
     # fuzzy-find an emoji
     bindsym $mod+grave exec fzf_emoji
 
+    # dismiss most recent notification
+    bindsym  $mod+Shift+grave exec --no-startup-id makoctl dismiss
+
     # Open a web browser
     bindsym $mod+w exec $BROWSER
 
