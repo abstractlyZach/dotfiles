@@ -5,8 +5,6 @@ all:
 		alacritty waybar lazygit kak sway zsh common kak-lsp
 
 linux:
-	# load the Xresources file
-	xrdb "${HOME}/.config/Xresources"
 	# make desktop files available to the system
 	applications_dir="${HOME}/.local/share/applications"
 	mkdir -p "${HOME}/.local/share/applications"
