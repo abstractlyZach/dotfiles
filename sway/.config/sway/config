@@ -65,6 +65,11 @@ input "2:7:SynPS/2_Synaptics_TouchPad" events disabled
 # remap capslock key to esc on laptop keyboard
 input "1:1:AT_Translated_Set_2_keyboard" xkb_options caps:escape
 
+# carbonx1 touchpad
+input "1739:52824:SYNA8008:00_06CB:CE58_Touchpad" {
+    tap enabled
+}
+
 
 ### Key bindings
 #
