@@ -1,8 +1,21 @@
 .PHONY: osx nvim
 
 all:
-	stow --verbose=1 --target="${HOME}" htop rezide starship \
-		alacritty waybar lazygit kak sway zsh common kak-lsp
+	stow --verbose=1 --target="${HOME}" alacritty \
+		common \
+		foot \
+		htop \
+		kak \
+		kak-lsp \
+		lazygit \
+		neofetch \
+		rezide \
+		starship \
+		sway \
+		waybar \
+		wlogout \
+		zsh 
+	
 
 linux:
 	# make desktop files available to the system
