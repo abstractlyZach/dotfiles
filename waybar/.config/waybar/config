@@ -11,7 +11,7 @@
     "pulseaudio": {
         "format": "{icon}{volume}%",
         "on-click": "pavucontrol",
-        "format-muted": "",
+        "format-muted": " muted",
         "format-icons": {
             "headphones": "",
             "handsfree": "",
