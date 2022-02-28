@@ -1,6 +1,13 @@
 # add hints for all normal mode actions
 set -add global autoinfo normal
 
+# disable window title
+set global ui_options ncurses_set_title=false
+
+# cosmetics
+# add relative line numbers
+add-highlighter global/ number-lines -relative -hlcursor -min-digits 2
+
 # user commands
 map global user d -docstring "fuzzy-find files" ':connect run kak-fzf-files<ret>' 
 map global user b -docstring "fuzzy-find buffers" ':connect run kcr-fzf-buffers<ret>'
@@ -13,9 +20,6 @@ map global user l -docstring "get github permalink" ':connect run github-permali
 map global user h -docstring "lsp hover" ':lsp-hover<ret>'
 
 
-# disable window title
-set global ui_options ncurses_set_title=false
-
 source "%val{config}/plugins/plug.kak/rc/plug.kak"
 
 plug "robertmeta/plug.kak" noload
@@ -23,9 +27,6 @@ plug "robertmeta/plug.kak" noload
 plug "abstractlyZach/nord.kak" %{
     colorscheme nord
 }
-# cosmetics
-# add relative line numbers
-add-highlighter global/ number-lines -relative -hlcursor -min-digits 2
 
 plug "alexherbo2/auto-pairs.kak" %{
     require-module auto-pairs
