@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+set $term foot
 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
@@ -245,14 +245,14 @@ gaps outer 5
 
 # use fzf for launcher
 set $launcher list_executables | fzf --reverse | xargs swaymsg exec
-bindsym $mod+d exec alacritty --title '!launcher' -e zsh -c \'$launcher\'
+bindsym $mod+d exec foot -a launcher zsh -c \'$launcher\'
 
 # fallback in case alacritty or fzf fail
 bindsym $mod+Shift+d exec dmenu_path | dmenu | xargs swaymsg exec --
 
-# float any windows whose titles start with !
-for_window [title="^!.*$"] floating enable, border pixel 5
-for_window [title="^!launcher$"] resize set 400 400
+# float any windows whose app_id is launcher
+for_window [app_id="^launcher$"] floating enable, border pixel 5
+for_window [app_id="^launcher$"] resize set 400 400
 
 # all windows have no title bars and have a border x pixels thick
 for_window [title="^.*$"] border pixel 3
