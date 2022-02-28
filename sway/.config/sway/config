@@ -257,6 +257,9 @@ bindsym $mod+Shift+d exec dmenu_path | dmenu | xargs swaymsg exec --
 for_window [app_id="^launcher$"] floating enable, border pixel 5
 for_window [app_id="^launcher$"] resize set 400 400
 
+# float any windows whose title starts with "!"
+for_window [title="^!.*$"] floating enable, border pixel 5
+
 # all windows have no title bars and have a border x pixels thick
 for_window [title="^.*$"] border pixel 3
 
