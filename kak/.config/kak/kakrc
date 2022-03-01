@@ -24,14 +24,12 @@ source "%val{config}/plugins/plug.kak/rc/plug.kak"
 
 plug "robertmeta/plug.kak" noload
 
-plug "abstractlyZach/nord.kak" %{
-    colorscheme nord
+plug "alexherbo2/auto-pairs.kak" %{
+    enable-auto-pairs
 }
 
-plug "alexherbo2/auto-pairs.kak" %{
-    require-module auto-pairs
-    auto-pairs-enable 
-}
+# my personal nord colorscheme
+plug "abstractlyZach/nord.kak"
 
 # highlight current line
 plug "insipx/kak-crosshairs" %{
