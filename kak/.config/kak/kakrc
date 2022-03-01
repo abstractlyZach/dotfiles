@@ -92,9 +92,18 @@ plug "andreyorst/smarttab.kak" defer smarttab %{
     #hook global WinSetOption filetype=(c|cpp) smarttab
 }
 
-plug "alexherbo2/toggle-highlighter.kak" %{
-    require-module toggle-highlighter
-    map global user w -docstring "toggle whitespace highlighter" ':toggle-highlighter window/ show-whitespaces<ret>'
+plug "krornus/kakoune-toggle-map" %{
+    # this plugin needs a docstring option in the toggle-map function
+    # I should contribute
+    toggle-map global user w whitespace-on whitespace-off
+
+    define-command whitespace-on %{
+        add-highlighter window/ show-whitespaces
+    }
+
+    define-command whitespace-off %{
+        remove-highlighter window/show-whitespaces
+    }
 }
 
 evaluate-commands %sh{

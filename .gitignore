@@ -1,5 +1,5 @@
-kak/plugins/
-kak/colors/
+kak/.config/kak/plugins/
+kak/.config/kak/colors/
 nvim/plugged
 nvim/autoload
 # this is where I store my current wallpaper
