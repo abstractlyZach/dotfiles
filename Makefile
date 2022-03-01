@@ -12,6 +12,7 @@ all:
 		rezide \
 		starship \
 		sway \
+		sworkstyle \
 		waybar \
 		wlogout \
 		zsh 
