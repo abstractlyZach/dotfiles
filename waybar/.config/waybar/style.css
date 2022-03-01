@@ -119,8 +119,8 @@
 
 #custom-power{
     font-size: 26px;
-    font-family: "Material Design Icons Desktop";
     background-color: red;
+    padding: 0 7px;
     border-radius: 50px;
 }
 
