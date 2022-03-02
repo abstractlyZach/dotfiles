@@ -62,8 +62,13 @@ output * bg /home/leezach/.config/minimalist_nord_wallpaper.jpg fill
 # disable ThinkPad touchpad
 input "2:7:SynPS/2_Synaptics_TouchPad" events disabled
 
-# remap capslock key to esc on laptop keyboard
-input "1:1:AT_Translated_Set_2_keyboard" xkb_options caps:escape
+# laptop keyboard
+input "1:1:AT_Translated_Set_2_keyboard" {
+    # remap capslock key to esc 
+    xkb_options caps:escape
+    # remap prtsc key to mod4
+    xkb_file /home/leezach/.config/keymap.xkb
+}
 
 # carbonx1 touchpad
 input "1739:52824:SYNA8008:00_06CB:CE58_Touchpad" {
