@@ -342,3 +342,5 @@ exec mako
 # mouse cursor
 # https://wiki.archlinux.org/title/Sway#Change_cursor_theme_and_size
 seat seat0 xcursor_theme Bibata-Modern-Classic 24
+
+exec --no-startup-id "ssh-agent -a $SSH_AUTH_SOCK"

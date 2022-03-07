@@ -3,6 +3,7 @@
 all:
 	stow --verbose=1 --target="${HOME}" alacritty \
 		common \
+		environment.d \
 		foot \
 		htop \
 		kak \
