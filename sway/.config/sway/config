@@ -115,6 +115,8 @@ input "1739:52824:SYNA8008:00_06CB:CE58_Touchpad" {
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+p exec wlogout
+
 #
 # Moving around:
 #
