@@ -27,7 +27,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export GRIM_DEFAULT_DIR="${HOME}/screenshots"
 
 # use colored fd for fzf
-export FZF_DEFAULT_COMMAND="fd --type file --color=always --hidden --exclude .git"
+export FZF_DEFAULT_COMMAND="fd --strip-cwd-prefix --type file --color=always --hidden --exclude .git"
 
 # colors found here: https://github.com/ianchesal/nord-fzf
 export FZF_DEFAULT_OPTS="--ansi --reverse \
