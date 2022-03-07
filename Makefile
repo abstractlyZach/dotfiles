@@ -5,7 +5,6 @@ all:
 		common \
 		environment.d \
 		foot \
-		htop \
 		kak \
 		kak-lsp \
 		lazygit \
