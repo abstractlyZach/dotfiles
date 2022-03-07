@@ -1,16 +1,25 @@
-# dotfiles
+# AbstractlyZach's Dotfiles
 
-Configuration files for all my programs.
+This is a collection of configuration files for my programs.
 
-## Stow
-Some config files need to be in the HOME directory in order to be read. This is problematic since I like having my configuration files in version control, but it would be a bad idea to have your entire HOME directory under source control. 
+# Installation
+I use [stow](https://www.gnu.org/software/stow/) to 
+[manage my dotfiles](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html).
 
-I use stow to symlink any pesky files from this repo to the HOME directory.
-https://alexpearce.me/2016/02/managing-dotfiles-with-stow/
-
-## Installation
+If you want to install one of my configs (for example, alacritty), run this command:
 ```
-git clone https://github.com/abstractlyZach/dotfiles.git ~/.config
-cd ~/.config
-make
+stow --verbose --target="$HOME" alacritty
+```
+
+This will create a symlink from `~/.config/alacritty` to `./alacritty/.config/alacritty/`
+
+
+## interactive install
+You can also perform an interactive install by running [install](install). Make sure you have these dependencies installed:
+
+* [fzf](https://github.com/junegunn/fzf)
+* [fd](https://github.com/sharkdp/fd)
+
+```
+./install
 ```
