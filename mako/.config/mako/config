@@ -34,3 +34,6 @@ on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/bell.oga
 [category=mpd]
 default-timeout=2000
 group-by=category
+
+[category=screenshot]
+on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/screen-capture.oga
