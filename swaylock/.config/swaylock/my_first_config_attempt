@@ -1,0 +1,20 @@
+# solid screen background: dark grey
+color=2E3440
+
+# red
+bs-hl-color=BF616A
+
+# green
+inside-ver-color=8FBCBB
+
+# red
+inside-wrong-color=BF616A
+
+# light blue
+inside-clear-color=4C566A
+
+# dark white
+key-hl-color=D8DEE9
+
+ring-clear-color=EBCB8B
+ring-color=3B4252
