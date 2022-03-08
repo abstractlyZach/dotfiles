@@ -42,7 +42,7 @@ hook global ModuleLoaded x11 %{
     alias global popup x11-terminal
 }
 
-plug "andreyorst/powerline.kak" defer powerline %{
+plug "andreyorst/powerline.kak" defer powerline_solarized-dark-termcolors %{
     #Configure powerline.kak as desired
     powerline-theme solarized-dark-termcolors
     powerline-separator triangle
