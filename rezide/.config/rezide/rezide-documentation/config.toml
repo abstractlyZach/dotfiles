@@ -1,0 +1,25 @@
+[root]
+split = "horizontal"
+children = ['autocompiler', 'plaintext', 'rendered-pdf']
+sizes = [20, 40, 40]
+
+[autocompiler]
+command = """
+    alacritty \
+        --working-directory ~/workspace/abstractlyZach/reZIDE/ \
+        -e sh -c \
+            'echo README.md \
+            | entr sh -c \"echo compiling... \
+                && pandoc --pdf-engine=xelatex README.md -o README.pdf\"
+            '
+"""
+
+[plaintext]
+command = """
+    alacritty \
+        --working-directory ~/workspace/abstractlyZach/reZIDE/ \
+        -e sh -c 'kak README.md'
+"""
+
+[rendered-pdf]
+command = "sleep 3 && zathura ~/workspace/abstractlyZach/reZIDE/README.pdf"

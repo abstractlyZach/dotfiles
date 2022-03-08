@@ -1,0 +1,27 @@
+[root]
+split = "horizontal"
+children = ['terminals', 'documentation']
+sizes = [50, 50]
+
+[terminals]
+split = 'vertical'
+children = ['python-editor', 'python-gutter']
+sizes = [70, 30]
+
+[python-gutter]
+command = """
+    alacritty \
+        --working-directory ~/workspace/python-ide/ \
+        -e sh -c 'cat python.logo.colored.asciiart; zsh'
+"""
+
+
+[python-editor]
+command = """
+    alacritty \
+        --working-directory ~/workspace/python-ide/ \
+        -e sh -c 'cp script_template.py script.py; kak script.py; zsh'
+"""
+
+[documentation]
+command = "brave --new-window https://docs.python.org/3/"
