@@ -10,7 +10,7 @@ add-highlighter global/ number-lines -relative -hlcursor -min-digits 2
 
 # user commands
 map global user d -docstring "fuzzy-find files" ':connect run kak-fzf-files<ret>' 
-map global user b -docstring "fuzzy-find buffers" ':connect run kcr-fzf-buffers<ret>'
+map global user b -docstring "fuzzy-find buffers" ':connect run kak-fzf-buffers<ret>'
 map global user v -docstring "open kakrc" ':e ~/.config/kak/kakrc<ret>'
 map global user f -docstring "format current buffer" ':format<ret>'
 map global user a -docstring "open selection in broswer" '<a-|>xargs $BROWSER<ret>'
