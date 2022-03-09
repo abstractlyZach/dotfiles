@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "swaylock -e --image ~/.config/wall.png",
+    "action" : "swaylock",
     "text" : "Lock",
     "keybind" : "l"
 }
