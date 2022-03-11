@@ -23,7 +23,9 @@ set $term foot
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/leezach/.config/minimalist_nord_wallpaper.jpg fill
+
+# wallpaper by Daniel Leone
+output * bg $XDG_CONFIG_HOME/wallpaper.jpg fill
 
 #
 # Example configuration:
