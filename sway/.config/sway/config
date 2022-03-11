@@ -69,7 +69,7 @@ input "1:1:AT_Translated_Set_2_keyboard" {
     # remap capslock key to esc 
     xkb_options caps:escape
     # remap prtsc key to mod4
-    xkb_file $HOME/.config/keymap.xkb
+    xkb_file $XDG_CONFIG_HOME/keymap.xkb
 }
 
 # carbonx1 touchpad
