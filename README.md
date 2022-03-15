@@ -19,6 +19,7 @@ You can also perform an interactive install by running [install](install). Make 
 
 * [fzf](https://github.com/junegunn/fzf)
 * [fd](https://github.com/sharkdp/fd)
+* [stow](https://www.gnu.org/software/stow/)
 
 ```
 ./install
