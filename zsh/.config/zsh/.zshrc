@@ -98,5 +98,7 @@ nvm() {
 }
 
 # use starship for our prompt
-export STARSHIP_CONFIG="${XDG_CONFIG_HOME}/starship/config.toml"
-eval "$(starship init zsh)"
+if [[ -x starship ]]; then
+    export STARSHIP_CONFIG="${XDG_CONFIG_HOME}/starship/config.toml"
+    eval "$(starship init zsh)"
+fi
