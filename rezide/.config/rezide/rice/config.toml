@@ -1,6 +1,6 @@
 # Modifications needed:
-# * if you use a different terminal emulator than alacritty, replace all instances of
-#       "alacritty" in this file with whatever you use
+# * if you use a different terminal emulator than ${TERMINAL}, replace all instances of
+#       "${TERMINAL}" in this file with whatever you use
 # * if you use a different shell, replace all instances of "zsh" with whatever you use
 # * make sure you have the required dependencies installed (see README.md)
 [root]
@@ -10,7 +10,7 @@ split = "horizontal"
 
 [left]
 # show the tree of ~ with max depth 2
-command = "alacritty -e zsh -c 'fd --max-depth 2; zsh'"
+command = "${TERMINAL} -e zsh -c 'fd --max-depth 2; zsh'"
 
 [right]
 sizes = [50, 50]
@@ -19,8 +19,8 @@ split = "vertical"
 
 [neofetch]
 # run neofetch to show off your sick operating system. I use arch btw.
-command = "alacritty -e zsh -c 'neofetch; zsh'"
+command = "${TERMINAL} -e zsh -c 'neofetch; zsh'"
 
 [ls]
 # ls all files in long-format inside ~
-command = "alacritty -e zsh -c 'ls --all -l --color=always; zsh'"
+command = "${TERMINAL} -e zsh -c 'ls --all -l --color=always; zsh'"

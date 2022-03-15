@@ -10,7 +10,7 @@ sizes = [70, 30]
 
 [python-gutter]
 command = """
-    alacritty \
+    ${TERMINAL} \
         --working-directory ~/workspace/python-ide/ \
         -e sh -c 'cat python.logo.colored.asciiart; zsh'
 """
@@ -18,7 +18,7 @@ command = """
 
 [python-editor]
 command = """
-    alacritty \
+    ${TERMINAL} \
         --working-directory ~/workspace/python-ide/ \
         -e sh -c 'cp script_template.py script.py; kak script.py; zsh'
 """
