@@ -3,7 +3,11 @@
 
 # open terminal using a certain command
 export TERMINAL="foot"
-export SHELL="zsh"
+
+# make sure this is an absolute path. The shell is one of the first things to run and 
+# some scripts build around that assumption, so they won't check the PATH.
+export SHELL="/usr/bin/zsh"
+
 export EDITOR="kak"
 export FILE="lf"
 export BROWSER="google-chrome-stable"
