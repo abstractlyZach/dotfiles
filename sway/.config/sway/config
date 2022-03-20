@@ -72,6 +72,11 @@ input "1:1:AT_Translated_Set_2_keyboard" {
     xkb_file $XDG_CONFIG_HOME/keymap.xkb
 }
 
+# framework laptop
+input "2362:628:PIXA3854:00_093A:0274_Touchpad" {
+    tap enabled
+}
+
 # carbonx1 touchpad
 input "1739:52824:SYNA8008:00_06CB:CE58_Touchpad" {
     tap enabled
