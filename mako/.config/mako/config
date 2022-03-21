@@ -40,3 +40,6 @@ group-by=category
 
 [category=screenshot]
 on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/screen-capture.oga
+
+[app-name=Spotify]
+on-notify=none
