@@ -16,12 +16,12 @@ I use [stow](https://www.gnu.org/software/stow/) to
 [manage my dotfiles](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html).
 
 ## manual installation
-If you want to install one of my configs (for example, alacritty), run this command:
+If you want to install one of my configs (for example, fzf), run this command:
 ```
-stow --verbose --target="$HOME" alacritty
+stow --verbose --target="$HOME" fzf
 ```
 
-This will create a symlink from `~/.config/alacritty` to `./alacritty/.config/alacritty/`
+This will create a symlink from `~/.config/fzf` to `./fzf/.config/fzf/`
 
 
 ## interactive install
