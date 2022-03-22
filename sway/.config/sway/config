@@ -122,6 +122,11 @@ input "1739:52824:SYNA8008:00_06CB:CE58_Touchpad" {
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+
+    bindsym $mod+c exec open_calendar
+    bindsym $mod+m exec open_mail
+    bindsym $mod+Shift+m exec open_chat
+
     bindsym $mod+p exec wlogout
 
 #
@@ -329,11 +334,9 @@ workspace 10 output eDP-1 LVDS-1
 # display-specific configurations can be found in kanshi
 
 # assign these windows to specific workspaces
-# for_window [title="^Slack.*$"] move container to workspace 3
-# for_window [title="^Signal Beta$"] move container to workspace 6
-# for_window [title="^Inbox.*$"] move container to workspace 1
-# for_window [title="^.*Calendar.*$"] move container to workspace 2
-# for_window [title="^.*Chat$"] move container to workspace 3
+for_window [app_id="chrome-mail.google.com__-Profile_1"] move container to workspace 1
+for_window [app_id="chrome-calendar.google.com__-Profile_1"] move container to workspace 2
+for_window [app_id="chrome-chat.google.com__-Profile_1"] move container to workspace 3
 
 
 # rename workspaces based on what's running
