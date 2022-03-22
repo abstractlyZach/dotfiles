@@ -341,7 +341,7 @@ for_window [app_id="chrome-chat.google.com__-Profile_1"] move container to works
 
 # rename workspaces based on what's running
 # https://github.com/Lyr-7D1h/swayest_workstyle
-exec_always sworkstyle &> /tmp/sworkstyle.log
+exec_always pkill sworkstyle; exec sworkstyle &> /tmp/sworkstyle.log
 
 # automatically tile windows evenly on these workspaces
 exec_always autotiling
