@@ -1,7 +1,7 @@
 profile x1_connected {
     # position displays on top of each other, with the laptop being centered
     # beneath the external monitor
-    output "Hewlett Packard HP Z27n CNK7171M3L" enable position 0,0
+    output "Hewlett Packard HP Z24i CNK33808X8" enable position 0,0
     output "Unknown 0x1403 0x00000000" disable
 
     exec notify-send "connected x1 to an external monitor!" --icon=nm-no-connection
