@@ -25,6 +25,9 @@
 fallback = ''
 
 [matching]
+'chrome-calendar.google.com__-Profile_1' = '📅'
+'chrome-mail.google.com__-Profile_1' = ''
+'chrome-chat.google.com__-Profile_1' = '🗨'
 'discord' = ''
 'foot' = ''
 'balena-etcher' = ''
@@ -38,6 +41,7 @@ fallback = ''
 'Insomnia' = ''
 'Bitwarden' = ''
 'Google-chrome' = ''
+'google-chrome' = ''
 'Chromium' = ''
 'Slack' = ''
 'Code' = ''
