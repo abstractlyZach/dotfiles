@@ -19,16 +19,6 @@ se() {
 	xargs -r $EDITOR
 }
 
-# open a PlanGrid python file
-PLANGRID_DIR="$HOME/workspace/plangrid"
-pgpy() {
-    fd --extension py  --color=always --absolute-path . "$PLANGRID_DIR" |
-	sed "s,$PLANGRID_DIR,👷," |
-	fzf | 
-	sed "s,👷,$PLANGRID_DIR," |
-	xargs --no-run-if-empty $EDITOR
-}
-
 # fuzzy extension finder
 # search all files that end with a certain extension
 fx() {
