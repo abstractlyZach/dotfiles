@@ -8,7 +8,7 @@ fi
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE=~/.cache/zsh/history
+HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh_history"
 
 # Basic auto/tab complete:
 autoload -U compinit
