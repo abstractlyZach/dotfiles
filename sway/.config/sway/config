@@ -337,6 +337,7 @@ workspace 10 output eDP-1 LVDS-1
 for_window [app_id="chrome-mail.google.com__-Profile_1"] move container to workspace 1
 for_window [app_id="chrome-calendar.google.com__-Profile_1"] move container to workspace 2
 for_window [app_id="chrome-chat.google.com__-Profile_1"] move container to workspace 3
+for_window [class="Spotify"] move container to workspace 6
 
 
 # rename workspaces based on what's running
