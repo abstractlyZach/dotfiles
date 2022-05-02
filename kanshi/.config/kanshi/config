@@ -25,3 +25,9 @@ profile framework_solo {
     exec notify-send "framework is in solo mode" --icon=nm-no-connection
 }
 
+profile x1_samsung {
+    output "Samsung Electric Company LF32TU87 HCPRA00197" enable position 0,0 scale 1.5
+    output "Unknown 0x1403 0x00000000" disable
+
+    exec notify-send "x1 is connected to Samsung monitor" --icon=nm-no-connection
+}
