@@ -29,3 +29,10 @@ profile x1_samsung {
 
     exec notify-send "x1 is connected to Samsung monitor" --icon=nm-no-connection
 }
+
+profile x1_ultrawide {
+    output "Unknown 0x1403 0x00000000" disable
+    output "Acer Technologies Acer XR342CKP 0x0000B72F" enable position 0,0 scale 1.25 mode 3440x1440
+
+    exec notify-send "x1 is connected to ultrawide monitor" --icon=nm-no-connection
+}
