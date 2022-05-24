@@ -82,6 +82,12 @@ input "1739:52824:SYNA8008:00_06CB:CE58_Touchpad" {
     tap enabled
 }
 
+# basic logitech keyboard
+input "1133:49948:Logitech_USB_Keyboard" {
+    xkb_options caps:escape
+}
+
+
 
 ### Key bindings
 #
