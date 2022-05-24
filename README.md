@@ -4,7 +4,13 @@ This is a collection of configuration files for my programs.
 
 
 ## Installation
-I use `rcm`.
-details tbd
+I use [rcm](https://github.com/thoughtbot/rcm).
 
-<!-- todo: add installation details -->
+```
+RCRC=./rcrc rcup -d . -v
+```
+
+## Uninstallation
+```
+RCRC=./rcrc rcdn -d . -v
+```
