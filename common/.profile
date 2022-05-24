@@ -19,6 +19,7 @@ export SUDO_ASKPASS="$HOME/bin/dmenupass"
 export PATH="$HOME/bin:$PATH"
 export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/go/bin"
+export PATH="$PATH:$HOME/workspace/kcr/bin"
 
 # ~/ Cleanup
 export LESSHISTFILE="-"
