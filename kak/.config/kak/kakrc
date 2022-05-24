@@ -24,10 +24,6 @@ source "%val{config}/plugins/plug.kak/rc/plug.kak"
 
 plug "robertmeta/plug.kak" noload
 
-plug "alexherbo2/auto-pairs.kak" %{
-    enable-auto-pairs
-}
-
 # my personal nord colorscheme
 plug "abstractlyZach/nord.kak"
 
