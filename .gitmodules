@@ -1,5 +1,5 @@
 [submodule "powerlevel10k/.config/powerlevel10k"]
-	path = powerlevel10k/.config/powerlevel10k
+	path = config/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
 [submodule "work_dotfiles"]
 	path = work_dotfiles
