@@ -1,0 +1,3 @@
+# zsh doesn't know anything about .profile and sometimes .profile doesn't get sourced 
+# by the login shell, so let's run it ourselves
+source "${HOME}/.profile"
