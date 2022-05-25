@@ -111,5 +111,12 @@ if [ -f "${XDG_CONFIG_HOME}/powerlevel10k/powerlevel10k.zsh-theme" ]; then
     [[ -f "${ZDOTDIR}/p10k.zsh" ]] && source "${ZDOTDIR}/p10k.zsh"
 fi
 
-[ -f "${ZDOTDIR}/.zshrc_google" ] && source "${ZDOTDIR}/.zshrc_google"
+# We keep all extra files in ZDOTDIR/rcfiles to separate concerns
+# It also lets us drop in arbitrary files since some can't be stored in this
+# repo's history, like work-specific files
+if [ -d "${ZDOTDIR}/rcfiles" ]; then
+    for rcfile (${ZDOTDIR}/rcfiles/*.zsh); do
+        source "${rcfile}"
+    done
+fi
 
