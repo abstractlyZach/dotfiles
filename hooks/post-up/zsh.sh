@@ -8,7 +8,3 @@ set -x
 rcfile="${XDG_CONFIG_HOME}/zsh/.zshrc"
 rm "${rcfile}"
 ln -s zshrc "${rcfile}"
-
-profilefile="${XDG_CONFIG_HOME}/zsh/.zprofile"
-rm "${profilefile}"
-ln -s zprofile "${profilefile}"
