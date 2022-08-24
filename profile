@@ -10,7 +10,7 @@ export SHELL="/usr/bin/zsh"
 
 export EDITOR="kak"
 export FILE="lf"
-export BROWSER="google-chrome-stable"
+export BROWSER="google-chrome-stable --enable-features=UseOzonePlatform --ozone-platform=wayland"
 
 export SUDO_ASKPASS="$HOME/bin/dmenupass"
 
