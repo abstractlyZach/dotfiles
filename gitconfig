@@ -3,6 +3,7 @@
 	name = abstractlyZach
 [diff]
 	tool = vimdiff3
+	submodule = log
 [difftool "vimdiff3"]
 	path = nvim
 [merge]
