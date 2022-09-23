@@ -6,5 +6,5 @@
 # TODO: learn how rcm sets verbosity and try to match it here
 set -x
 rcfile="${XDG_CONFIG_HOME}/zsh/.zshrc"
-rm "${rcfile}"
+[ -f "${rcfile}" ] && rm "${rcfile}"
 ln -s zshrc "${rcfile}"
