@@ -1,16 +1,38 @@
 # AbstractlyZach's Dotfiles
 
-This is a collection of configuration files for my programs.
+I use [rcm](https://github.com/thoughtbot/rcm) to manage my personal dotfiles.
 
+This is the repo I use to set up my personal dotfiles on personal computers. If you're looking for
+the system I use to merge both my personal and work dotfiles, you can find it here:
+[update this link after I move the dotfile manager to public repo]()
 
-## Installation
-I use [rcm](https://github.com/thoughtbot/rcm).
+## Required Dependencies
+```
+rcm
+```
+
+## Downloading
 
 ```
-RCRC=./rcrc rcup -d . -v
+$ git clone https://github.com/abstractlyZach/dotfiles.git
 ```
 
-## Uninstallation
+## Using rcm
+
+These commands will allow you to use [rcm](https://github.com/thoughtbot/rcm)'s suite of tools to
+perform various dotfile management commands. You could also use the commands in the [Makefile](Makefile)
+for convenience.
+
+### Dry-run the installation
+
+Make sure to include any `-t <tag-name>` flags that you'd like.
+
 ```
-RCRC=./rcrc rcdn -d . -v
+$ RCRC=./rcrc lsrc
+```
+
+### Do the installation
+
+```
+$ RCRC=./rcrc rcup
 ```
