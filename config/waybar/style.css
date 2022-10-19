@@ -21,11 +21,23 @@
     padding: 5 6px;
     background-color: #3b4252;
     color: #d8dee9;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+#workspaces button:hover {
+    background-color: #00ff00;
+    color: #000000
 }
 
 #workspaces button.focused {
     background-color: #88c0d0;
     color: #2e3440
+}
+
+#workspaces button.focused:hover {
+    background-color: #ff0000;
+    color: #000000
 }
 
 #workspaces button.urgent {
