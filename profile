@@ -8,7 +8,7 @@ export TERMINAL="foot"
 # some scripts build around that assumption, so they won't check the PATH.
 export SHELL="/usr/bin/zsh"
 
-export EDITOR="kak"
+export EDITOR="nvim"
 export FILE="lf"
 export BROWSER="google-chrome-stable --enable-features=UseOzonePlatform --ozone-platform=wayland"
 
