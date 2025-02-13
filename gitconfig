@@ -19,3 +19,6 @@
 
 [url "git@github.com:"]
     insteadOf = https://github.com/
+
+[includeIf "gitdir:/usr/local/google/home/leezach/workspace/wear/"]
+    path = ~/.config/android.gitconfig
