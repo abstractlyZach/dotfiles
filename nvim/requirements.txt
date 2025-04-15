@@ -1,0 +1,4 @@
+black >= 19.10b0
+mypy >= 0.782
+neovim >= 0.3.1
+reorder-python-imports >= 2.3.1
