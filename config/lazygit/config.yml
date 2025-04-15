@@ -21,7 +21,7 @@ gui:
   commitLength:
     show: true
   mouseEvents: true
-  skipUnstageLineWarning: false
+  skipDiscardChangeWarning: false
   skipStashWarning: true
   showFileTree: false # for rendering changes files in a tree format
   showListFooter: true # for seeing the '5 of 20' message in list panels
@@ -98,7 +98,7 @@ keybinding:
     scrollDownMain-alt1: 'J' # main panel scroll down
     scrollUpMain-alt2: '<c-u>' # main panel scroll up
     scrollDownMain-alt2: '<c-d>' # main panel scroll down
-    executeCustomCommand: ':'
+    executeShellCommand: ':'
     createRebaseOptionsMenu: 'm'
     pushFiles: 'P'
     pullFiles: 'p'
