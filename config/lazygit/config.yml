@@ -42,9 +42,10 @@ git:
   skipHookPrefix: WIP
   autoFetch: true
   branchLogCmd: 'git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium {{branchName}} --'
-  allBranchesLogCmd: 'git log --graph --all --color=always --abbrev-commit --decorate --date=relative  --pretty=medium'
   overrideGpg: false # prevents lazygit from spawning a separate process when using GPG
   disableForcePushing: false
+  allBranchesLogCmds:
+    - git log --graph --all --color=always --abbrev-commit --decorate --date=relative  --pretty=medium
 os:
   editCommand: '' # see 'Configuring File Editing' section
   openCommand: ''
@@ -181,4 +182,4 @@ customCommands:
     command: "gh pr create"
     context: "global"
     loadingText: "Creating pull request on GitHub"
-    subprocess: true
+    output: terminal
