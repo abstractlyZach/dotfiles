@@ -124,3 +124,6 @@ if [ -d "${ZDOTDIR}/rcfiles" ]; then
         source "${rcfile}"
     done
 fi
+
+# uv autocompletion for python project management
+eval "$(uv generate-shell-completion zsh)"
